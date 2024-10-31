@@ -41,7 +41,7 @@ image: cbilgi.jpg
 email: h.c.bilgi@tudelft.nl
 
 # Room number (e.g., 840 West 4rd floor)
-office: 1.E.030
+office: 1.E.060
 
 # The name of this file with .html extension instead of .md (If the filename is ionescu.md, the "back" field will be ionescu.html)
 back: bilgi.html
