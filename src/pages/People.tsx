@@ -1,95 +1,257 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Mail, Linkedin, ExternalLink, MapPin, GraduationCap, ArrowLeft } from "lucide-react";
+import { Mail, Linkedin, ExternalLink, MapPin, GraduationCap, ArrowLeft, Users2 } from "lucide-react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import personPlaceholder from "@/assets/person-placeholder.jpg";
 
 const People = () => {
-  // Sample team data - replace with actual team information
+  // Actual team data from dis-delft.github.io
   const faculty = [
     {
-      name: "Prof. Dr. Jan Smith",
-      role: "Professor & Group Leader",
+      name: "Dick Epema",
+      role: "Emeritus Professor",
       image: personPlaceholder,
-      research: ["Distributed Systems", "Blockchain Technology", "Consensus Algorithms"],
-      email: "j.smith@tudelft.nl",
-      office: "HB 08.230",
-      bio: "Leading research in distributed systems and blockchain technology. 15+ years experience in system design and implementation."
+      research: ["Distributed Systems", "Performance Analysis", "Grid Computing"],
+      email: "d.h.j.epema@tudelft.nl",
+      office: "060 East 1st floor",
+      profileUrl: "https://dis-delft.github.io/epema",
+      bio: "Emeritus Professor with extensive expertise in distributed systems and performance analysis."
     },
     {
-      name: "Dr. Sarah Johnson", 
+      name: "Kubilay Atasu", 
       role: "Associate Professor",
       image: personPlaceholder,
-      research: ["Machine Learning Systems", "Federated Learning", "AI Infrastructure"],
-      email: "s.johnson@tudelft.nl",
-      office: "HB 08.240",
-      bio: "Expert in large-scale machine learning systems and distributed AI architectures."
+      research: ["Computer Architecture", "FPGA Computing", "Hardware Acceleration"],
+      email: "k.atasu@tudelft.nl",
+      office: "1.E180",
+      profileUrl: "https://dis-delft.github.io/atasu",
+      linkedin: "https://www.linkedin.com/in/kubilay-atasu-bb28a03",
+      bio: "Associate Professor specializing in computer architecture and FPGA-based acceleration."
     },
     {
-      name: "Dr. Michael Chen",
+      name: "Johan Pouwelse",
+      role: "Associate Professor", 
+      image: personPlaceholder,
+      research: ["Blockchain Technology", "Peer-to-Peer Systems", "Decentralized Systems"],
+      email: "j.a.pouwelse@tudelft.nl",
+      office: "340 East 1st Floor",
+      profileUrl: "https://dis-delft.github.io/pouwelse",
+      bio: "Associate Professor leading research in blockchain and peer-to-peer systems."
+    },
+    {
+      name: "Lydia Chen",
+      role: "Associate Professor", 
+      image: personPlaceholder,
+      research: ["Machine Learning Systems", "Cloud Computing", "Performance Modeling"],
+      email: "lydiay.chen@tudelft.nl",
+      office: "1.E.080",
+      profileUrl: "https://dis-delft.github.io/ychen",
+      linkedin: "https://www.linkedin.com/in/lydia-y-chen-65b7136/",
+      bio: "Associate Professor focusing on machine learning systems and cloud performance."
+    },
+    {
+      name: "Jérémie Decouchant",
       role: "Assistant Professor", 
       image: personPlaceholder,
-      research: ["Data Management", "Cloud Computing", "Performance Analysis"],
-      email: "m.chen@tudelft.nl",
-      office: "HB 08.250",
-      bio: "Specializing in data-intensive systems and cloud infrastructure optimization."
+      research: ["Distributed Algorithms", "Fault Tolerance", "Byzantine Systems"],
+      email: "j.decouchant@tudelft.nl",
+      office: "1.E.280",
+      profileUrl: "https://dis-delft.github.io/decouchant",
+      linkedin: "https://www.linkedin.com/in/jeremie-decouchant",
+      github: "https://github.com/jdecouchant",
+      bio: "Assistant Professor specializing in distributed algorithms and fault-tolerant systems."
+    },
+    {
+      name: "Asterios Katsifodimos",
+      role: "Assistant Professor", 
+      image: personPlaceholder,
+      research: ["Stream Processing", "Big Data Systems", "Distributed Analytics"],
+      email: "a.katsifodimos@tudelft.nl",
+      profileUrl: "https://dis-delft.github.io/katsifodimos",
+      linkedin: "https://www.linkedin.com/in/asteriosk/",
+      github: "https://github.com/asteriosk",
+      bio: "Assistant Professor working on stream processing and big data systems."
     }
   ];
 
   const researchers = [
     {
-      name: "Dr. Emily Rodriguez",
+      name: "George Christodoulou",
       role: "Postdoctoral Researcher",
       image: personPlaceholder,
-      research: ["Resilient Systems", "Fault Tolerance", "Distributed Consensus"],
-      email: "e.rodriguez@tudelft.nl",
-      office: "HB 08.120"
+      research: ["Distributed Systems", "Performance Analysis", "Cloud Computing"],
+      email: "g.christodoulou@tudelft.nl",
+      office: "1.E.240",
+      profileUrl: "https://dis-delft.github.io/christodoulou",
+      linkedin: "https://www.linkedin.com/in/george-ch/",
+      github: "https://github.com/GiorgosChristodoulou"
     },
     {
-      name: "Dr. Alex Kim",
-      role: "Senior Researcher",
+      name: "Jiyue (Gill) Huang",
+      role: "Postdoctoral Researcher",
       image: personPlaceholder,
-      research: ["Blockchain Security", "Cryptocurrency Systems", "Privacy"],
-      email: "a.kim@tudelft.nl", 
-      office: "HB 08.130"
+      research: ["Machine Learning", "Distributed AI", "Federated Learning"],
+      email: "j.huang-6@tudelft.nl", 
+      office: "1.E.200",
+      profileUrl: "https://dis-delft.github.io/jhuang",
+      linkedin: "https://www.linkedin.com/in/jiyue-gill-huang-ab5531281/",
+      github: "https://github.com/GillHuang-Xtler"
+    },
+    {
+      name: "Quinten Stokkink",
+      role: "Postdoctoral Researcher",
+      image: personPlaceholder,
+      research: ["Blockchain", "Peer-to-Peer Networks", "Decentralized Systems"],
+      email: "q.stokkink@tudelft.nl",
+      office: "420 East 1st floor",
+      profileUrl: "https://dis-delft.github.io/stokkink",
+      github: "https://github.com/qstokkink"
     }
   ];
 
   const phd_students = [
     {
-      name: "Lisa Zhang",
+      name: "Taha Atahan Akyildiz",
       role: "PhD Candidate",
       image: personPlaceholder,
-      research: ["Federated Learning", "Privacy-Preserving ML"],
-      email: "l.zhang@student.tudelft.nl",
-      year: "4th Year"
+      research: ["Distributed Systems", "Performance Analysis"],
+      email: "t.a.akyildiz@tudelft.nl",
+      office: "1.E.060",
+      profileUrl: "https://dis-delft.github.io/akyildiz",
+      linkedin: "https://www.linkedin.com/in/taha-atahan-aky%C4%B1ld%C4%B1z-8b2321123/",
+      github: "https://github.com/Atahanak/"
     },
     {
-      name: "David Wilson",
+      name: "Halil Cagri Bilgi",
       role: "PhD Candidate", 
       image: personPlaceholder,
-      research: ["Blockchain Scalability", "Layer 2 Solutions"],
-      email: "d.wilson@student.tudelft.nl",
-      year: "3rd Year"
+      research: ["Machine Learning Systems", "Distributed Computing"],
+      email: "h.c.bilgi@tudelft.nl",
+      office: "1.E.060",
+      profileUrl: "https://dis-delft.github.io/bilgi",
+      linkedin: "https://www.linkedin.com/in/cagribilgi",
+      github: "https://github.com/hcagri/"
     },
     {
-      name: "Anna Kowalski",
+      name: "Rowdy Chotkan",
       role: "PhD Candidate",
       image: personPlaceholder,
-      research: ["Data Stream Processing", "Real-time Systems"],
-      email: "a.kowalski@student.tudelft.nl",
-      year: "2nd Year"
+      research: ["Blockchain Technology", "Decentralized Systems"],
+      email: "r.chotkan@tudelft.nl",
+      office: "400 West 1st floor",
+      profileUrl: "https://dis-delft.github.io/chotkan",
+      linkedin: "https://www.linkedin.com/in/rowdy-chotkan/",
+      github: "https://github.com/InvictusRMC"
     },
     {
-      name: "Roberto Silva",
+      name: "Bart Cox",
       role: "PhD Candidate",
       image: personPlaceholder,
-      research: ["Distributed Databases", "Query Optimization"],
-      email: "r.silva@student.tudelft.nl", 
-      year: "1st Year"
+      research: ["Data Science", "Machine Learning"],
+      email: "b.cox@tudelft.nl", 
+      office: "1.E.200",
+      profileUrl: "https://dis-delft.github.io/cox",
+      linkedin: "https://www.linkedin.com/in/bart-cox/",
+      github: "https://github.com/bacox"
+    },
+    {
+      name: "Marcel Gregoriadis",
+      role: "PhD Candidate",
+      image: personPlaceholder,
+      research: ["Blockchain", "Distributed Ledger Technology"],
+      email: "m.gregoriadis@tudelft.nl",
+      office: "420 East 1st floor",
+      profileUrl: "https://dis-delft.github.io/gregoriadis",
+      linkedin: "https://www.linkedin.com/in/marcel-gregoriadis",
+      github: "https://github.com/mg98"
+    },
+    {
+      name: "Jeroen Martijn Galjaard",
+      role: "PhD Candidate",
+      image: personPlaceholder,
+      research: ["Machine Learning", "Distributed Systems"],
+      email: "j.m.galjaard@tudelft.nl",
+      profileUrl: "https://dis-delft.github.io/jmgaljaard",
+      linkedin: "https://www.linkedin.com/in/jmgaljaard",
+      github: "https://github.com/JMGaljaard"
+    },
+    {
+      name: "Oto Mráz",
+      role: "PhD Candidate",
+      image: personPlaceholder,
+      research: ["Distributed Computing", "Performance Analysis"],
+      email: "o.mraz@tudelft.nl",
+      office: "240 East 1st floor",
+      profileUrl: "https://dis-delft.github.io/mraz",
+      linkedin: "https://www.linkedin.com/in/oto-mraz-643270192/",
+      github: "https://github.com/omrazCZ"
+    },
+    {
+      name: "Bulat Nasrulin",
+      role: "PhD Candidate",
+      image: personPlaceholder,
+      research: ["Peer-to-Peer Systems", "Distributed Networks"],
+      email: "b.nasrulin@tudelft.nl",
+      office: "400 East 1st floor",
+      profileUrl: "https://dis-delft.github.io/nasrulin",
+      github: "https://github.com/grimadas"
+    },
+    {
+      name: "Petru Mihai Neague",
+      role: "PhD Candidate",
+      image: personPlaceholder,
+      research: ["Distributed Systems", "Cloud Computing"],
+      email: "p.m.neague@tudelft.nl",
+      profileUrl: "https://dis-delft.github.io/neague",
+      linkedin: "https://www.linkedin.com/in/petru-neague/",
+      github: "https://github.com/pneague"
+    },
+    {
+      name: "Kyriakos Psarakis",
+      role: "PhD Candidate",
+      image: personPlaceholder,
+      research: ["Stream Processing", "Big Data Systems"],
+      email: "k.psarakis@tudelft.nl",
+      office: "1.E.240",
+      profileUrl: "https://dis-delft.github.io/psarakis",
+      linkedin: "https://www.linkedin.com/in/kyriakos-psarakis-699843147/",
+      github: "https://github.com/kPsarakis"
+    },
+    {
+      name: "Marcus Schutte",
+      role: "PhD Candidate",
+      image: personPlaceholder,
+      research: ["Machine Learning", "Distributed AI"],
+      email: "m.w.schutte@tudelft.nl",
+      office: "1.E.240",
+      profileUrl: "https://dis-delft.github.io/schutte",
+      linkedin: "https://www.linkedin.com/in/marcus-schutte-0836b91b6/",
+      github: "https://github.com/mwschutte"
+    },
+    {
+      name: "Aditya Shankar",
+      role: "PhD Candidate",
+      image: personPlaceholder,
+      research: ["Cloud Computing", "Distributed Systems"],
+      email: "a.shankar@tudelft.nl",
+      office: "3.W.920 or 1.E.040",
+      profileUrl: "https://dis-delft.github.io/shankar",
+      linkedin: "https://www.linkedin.com/in/aashankar/",
+      github: "https://github.com/adis98"
+    },
+    {
+      name: "Chaoyi Zhu",
+      role: "PhD Candidate",
+      image: personPlaceholder,
+      research: ["Machine Learning", "Data Analytics"],
+      email: "c.zhu@tudelft.nl",
+      office: "1.E.040",
+      profileUrl: "https://dis-delft.github.io/zhu",
+      linkedin: "https://www.linkedin.com/in/chaoyizhu/",
+      github: "https://github.com/chaoyitud"
     }
   ];
 
@@ -106,13 +268,19 @@ const People = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           <div className="absolute bottom-4 left-4 right-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
             <div className="flex space-x-2">
-              <Button size="sm" variant="secondary" className="bg-white/90 text-foreground hover:bg-white">
-                <Mail className="w-4 h-4 mr-1" />
-                Email
+              <Button size="sm" variant="secondary" className="bg-white/90 text-foreground hover:bg-white" asChild>
+                <a href={`mailto:${person.email}`}>
+                  <Mail className="w-4 h-4 mr-1" />
+                  Email
+                </a>
               </Button>
-              <Button size="sm" variant="secondary" className="bg-white/90 text-foreground hover:bg-white">
-                <ExternalLink className="w-4 h-4" />
-              </Button>
+              {person.profileUrl && (
+                <Button size="sm" variant="secondary" className="bg-white/90 text-foreground hover:bg-white" asChild>
+                  <a href={person.profileUrl} target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
+                </Button>
+              )}
             </div>
           </div>
         </div>
@@ -151,7 +319,9 @@ const People = () => {
           <div className="space-y-2 text-sm text-muted-foreground">
             <div className="flex items-center">
               <Mail className="w-4 h-4 mr-2 text-primary" />
-              <span className="truncate">{person.email}</span>
+              <a href={`mailto:${person.email}`} className="truncate hover:text-primary transition-colors">
+                {person.email}
+              </a>
             </div>
             {person.office && (
               <div className="flex items-center">
@@ -163,6 +333,34 @@ const People = () => {
               <div className="flex items-center">
                 <GraduationCap className="w-4 h-4 mr-2 text-primary" />
                 <span>{person.year}</span>
+              </div>
+            )}
+            
+            {/* Social Links */}
+            {(person.linkedin || person.github) && (
+              <div className="flex items-center space-x-3 pt-2">
+                {person.linkedin && (
+                  <a 
+                    href={person.linkedin} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center text-primary hover:text-primary/70 transition-colors"
+                  >
+                    <Linkedin className="w-4 h-4 mr-1" />
+                    <span className="text-xs">LinkedIn</span>
+                  </a>
+                )}
+                {person.github && (
+                  <a 
+                    href={person.github} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center text-primary hover:text-primary/70 transition-colors"
+                  >
+                    <ExternalLink className="w-4 h-4 mr-1" />
+                    <span className="text-xs">GitHub</span>
+                  </a>
+                )}
               </div>
             )}
           </div>
@@ -253,7 +451,7 @@ const People = () => {
           </div>
 
           {/* PhD Students Section */}
-          <div className="mb-12">
+          <div className="mb-20">
             <div className="flex items-center mb-8 animate-slide-up">
               <div className="w-12 h-12 bg-gradient-card border-2 border-primary rounded-xl flex items-center justify-center mr-4">
                 <GraduationCap className="w-6 h-6 text-primary" />
@@ -264,16 +462,85 @@ const People = () => {
               </div>
             </div>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {phd_students.map((person, index) => (
                 <div 
                   key={person.name}
                   className="animate-slide-up"
-                  style={{ animationDelay: `${index * 100}ms` }}
+                  style={{ animationDelay: `${index * 50}ms` }}
                 >
                   <PersonCard person={person} />
                 </div>
               ))}
+            </div>
+          </div>
+
+          {/* Support Staff Section */}
+          <div className="mb-12">
+            <div className="flex items-center mb-8 animate-slide-up">
+              <div className="w-12 h-12 bg-muted rounded-xl flex items-center justify-center mr-4">
+                <Users2 className="w-6 h-6 text-muted-foreground" />
+              </div>
+              <div>
+                <h2 className="text-2xl font-bold text-academic">Support Staff</h2>
+                <p className="text-muted-foreground">Essential team members</p>
+              </div>
+            </div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <Card className="hover:shadow-elegant transition-all duration-300 border-border/50">
+                <CardContent className="p-6">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-gradient-hero rounded-full flex items-center justify-center">
+                      <Users2 className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-academic">Egbert Bouman</h3>
+                      <p className="text-muted-foreground">Developer</p>
+                      <p className="text-sm text-muted-foreground">Office: 1.E.320</p>
+                      <a 
+                        href="https://github.com/egbertbouman" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center text-primary hover:text-primary/70 transition-colors text-sm mt-1"
+                      >
+                        <ExternalLink className="w-3 h-3 mr-1" />
+                        GitHub
+                      </a>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-elegant transition-all duration-300 border-border/50">
+                <CardContent className="p-6">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-gradient-accent rounded-full flex items-center justify-center">
+                      <Users2 className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-academic">Marja de Graaf</h3>
+                      <p className="text-muted-foreground">Secretary</p>
+                      <p className="text-sm text-muted-foreground">Office: 3.E.320</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-elegant transition-all duration-300 border-border/50">
+                <CardContent className="p-6">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-gradient-accent rounded-full flex items-center justify-center">
+                      <Users2 className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-academic">Kim Boudewijn</h3>
+                      <p className="text-muted-foreground">Secretary</p>
+                      <p className="text-sm text-muted-foreground">Office: 1.W.640</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
 
