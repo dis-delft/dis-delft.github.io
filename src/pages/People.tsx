@@ -1,7 +1,10 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Mail, Linkedin, ExternalLink, MapPin, GraduationCap } from "lucide-react";
+import { Mail, Linkedin, ExternalLink, MapPin, GraduationCap, ArrowLeft } from "lucide-react";
+import { Link } from "react-router-dom";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import personPlaceholder from "@/assets/person-placeholder.jpg";
 
 const People = () => {
@@ -169,123 +172,140 @@ const People = () => {
   );
 
   return (
-    <section id="people" className="py-24 bg-background">
-      <div className="container mx-auto px-6">
-        {/* Section Header */}
-        <div className="text-center mb-16 animate-slide-up">
-          <Badge variant="outline" className="mb-4 text-primary border-primary/20">
-            Our Team
-          </Badge>
-          <h2 className="text-4xl md:text-5xl font-bold text-gradient-primary mb-6">
-            Meet Our Researchers
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A diverse team of world-class researchers, educators, and students working together 
-            to advance the frontiers of data-intensive systems and distributed computing.
-          </p>
-        </div>
+    <div className="min-h-screen bg-background">
+      <Header />
+      
+      {/* Main Content */}
+      <main className="pt-24">
+        <div className="container mx-auto px-6">
+          {/* Back Navigation */}
+          <div className="mb-8 animate-slide-up">
+            <Button variant="ghost" asChild className="mb-4">
+              <Link to="/" className="flex items-center text-muted-foreground hover:text-primary">
+                <ArrowLeft className="w-4 h-4 mr-2" />
+                Back to Home
+              </Link>
+            </Button>
+          </div>
 
-        {/* Faculty Section */}
-        <div className="mb-20">
-          <div className="flex items-center mb-8 animate-slide-up">
-            <div className="w-12 h-12 bg-gradient-hero rounded-xl flex items-center justify-center mr-4">
-              <GraduationCap className="w-6 h-6 text-white" />
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold text-academic">Faculty Members</h3>
-              <p className="text-muted-foreground">Leading researchers and educators</p>
-            </div>
+          {/* Page Header */}
+          <div className="text-center mb-16 animate-slide-up">
+            <Badge variant="outline" className="mb-4 text-primary border-primary/20">
+              Our Team
+            </Badge>
+            <h1 className="text-4xl md:text-5xl font-bold text-gradient-primary mb-6">
+              Meet Our Researchers
+            </h1>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              A diverse team of world-class researchers, educators, and students working together 
+              to advance the frontiers of data-intensive systems and distributed computing.
+            </p>
           </div>
-          
-          <div className="grid lg:grid-cols-3 gap-8">
-            {faculty.map((person, index) => (
-              <div 
-                key={person.name}
-                className="animate-slide-up"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <PersonCard person={person} showBio={true} />
-              </div>
-            ))}
-          </div>
-        </div>
 
-        {/* Researchers Section */}
-        <div className="mb-20">
-          <div className="flex items-center mb-8 animate-slide-up">
-            <div className="w-12 h-12 bg-gradient-accent rounded-xl flex items-center justify-center mr-4">
-              <ExternalLink className="w-6 h-6 text-white" />
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold text-academic">Research Staff</h3>
-              <p className="text-muted-foreground">Postdocs and senior researchers</p>
-            </div>
-          </div>
-          
-          <div className="grid lg:grid-cols-2 gap-8">
-            {researchers.map((person, index) => (
-              <div 
-                key={person.name}
-                className="animate-slide-up"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <PersonCard person={person} />
+          {/* Faculty Section */}
+          <div className="mb-20">
+            <div className="flex items-center mb-8 animate-slide-up">
+              <div className="w-12 h-12 bg-gradient-hero rounded-xl flex items-center justify-center mr-4">
+                <GraduationCap className="w-6 h-6 text-white" />
               </div>
-            ))}
+              <div>
+                <h2 className="text-2xl font-bold text-academic">Faculty Members</h2>
+                <p className="text-muted-foreground">Leading researchers and educators</p>
+              </div>
+            </div>
+            
+            <div className="grid lg:grid-cols-3 gap-8">
+              {faculty.map((person, index) => (
+                <div 
+                  key={person.name}
+                  className="animate-slide-up"
+                  style={{ animationDelay: `${index * 100}ms` }}
+                >
+                  <PersonCard person={person} showBio={true} />
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
 
-        {/* PhD Students Section */}
-        <div className="mb-12">
-          <div className="flex items-center mb-8 animate-slide-up">
-            <div className="w-12 h-12 bg-gradient-card border-2 border-primary rounded-xl flex items-center justify-center mr-4">
-              <GraduationCap className="w-6 h-6 text-primary" />
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold text-academic">PhD Students</h3>
-              <p className="text-muted-foreground">The next generation of researchers</p>
-            </div>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {phd_students.map((person, index) => (
-              <div 
-                key={person.name}
-                className="animate-slide-up"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <PersonCard person={person} />
+          {/* Researchers Section */}
+          <div className="mb-20">
+            <div className="flex items-center mb-8 animate-slide-up">
+              <div className="w-12 h-12 bg-gradient-accent rounded-xl flex items-center justify-center mr-4">
+                <ExternalLink className="w-6 h-6 text-white" />
               </div>
-            ))}
+              <div>
+                <h2 className="text-2xl font-bold text-academic">Research Staff</h2>
+                <p className="text-muted-foreground">Postdocs and senior researchers</p>
+              </div>
+            </div>
+            
+            <div className="grid lg:grid-cols-2 gap-8">
+              {researchers.map((person, index) => (
+                <div 
+                  key={person.name}
+                  className="animate-slide-up"
+                  style={{ animationDelay: `${index * 100}ms` }}
+                >
+                  <PersonCard person={person} />
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
 
-        {/* Join Us CTA */}
-        <div className="text-center animate-slide-up" style={{ animationDelay: '800ms' }}>
-          <Card className="max-w-2xl mx-auto bg-gradient-card border-border/50">
-            <CardContent className="p-8">
-              <GraduationCap className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-4 text-academic">
-                Join Our Research Group
-              </h3>
-              <p className="text-foreground/80 mb-6 leading-relaxed">
-                Interested in pursuing a PhD or postdoctoral research in distributed systems? 
-                We're always looking for talented researchers to join our team.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                <Button className="bg-gradient-hero hover:shadow-glow transition-all duration-300">
-                  <Mail className="mr-2 w-4 h-4" />
-                  Contact Us About Positions
-                </Button>
-                <Button variant="outline" className="border-primary/20 hover:bg-primary/5">
-                  View Current Openings
-                </Button>
+          {/* PhD Students Section */}
+          <div className="mb-12">
+            <div className="flex items-center mb-8 animate-slide-up">
+              <div className="w-12 h-12 bg-gradient-card border-2 border-primary rounded-xl flex items-center justify-center mr-4">
+                <GraduationCap className="w-6 h-6 text-primary" />
               </div>
-            </CardContent>
-          </Card>
+              <div>
+                <h2 className="text-2xl font-bold text-academic">PhD Students</h2>
+                <p className="text-muted-foreground">The next generation of researchers</p>
+              </div>
+            </div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {phd_students.map((person, index) => (
+                <div 
+                  key={person.name}
+                  className="animate-slide-up"
+                  style={{ animationDelay: `${index * 100}ms` }}
+                >
+                  <PersonCard person={person} />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Join Us CTA */}
+          <div className="text-center mb-20 animate-slide-up" style={{ animationDelay: '800ms' }}>
+            <Card className="max-w-2xl mx-auto bg-gradient-card border-border/50">
+              <CardContent className="p-8">
+                <GraduationCap className="w-12 h-12 text-primary mx-auto mb-4" />
+                <h3 className="text-2xl font-bold mb-4 text-academic">
+                  Join Our Research Group
+                </h3>
+                <p className="text-foreground/80 mb-6 leading-relaxed">
+                  Interested in pursuing a PhD or postdoctoral research in distributed systems? 
+                  We're always looking for talented researchers to join our team.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                  <Button className="bg-gradient-hero hover:shadow-glow transition-all duration-300">
+                    <Mail className="mr-2 w-4 h-4" />
+                    Contact Us About Positions
+                  </Button>
+                  <Button variant="outline" className="border-primary/20 hover:bg-primary/5">
+                    View Current Openings
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
-      </div>
-    </section>
+      </main>
+
+      <Footer />
+    </div>
   );
 };
 

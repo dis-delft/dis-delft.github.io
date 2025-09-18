@@ -18,7 +18,7 @@ const Header = () => {
   const navigation = [
     { name: "About", href: "#about" },
     { name: "Research", href: "#research" },
-    { name: "People", href: "#people" },
+    { name: "People", href: "/people" },
     { name: "Publications", href: "#publications" },
     { name: "Education", href: "#education" },
     { name: "Contact", href: "#contact" },
@@ -50,13 +50,23 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {navigation.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-foreground/80 hover:text-primary transition-colors duration-200 font-medium"
-              >
-                {item.name}
-              </a>
+              item.href.startsWith('/') ? (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-foreground/80 hover:text-primary transition-colors duration-200 font-medium"
+                >
+                  {item.name}
+                </a>
+              ) : (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-foreground/80 hover:text-primary transition-colors duration-200 font-medium"
+                >
+                  {item.name}
+                </a>
+              )
             ))}
           </nav>
 
