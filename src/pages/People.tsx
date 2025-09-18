@@ -7,13 +7,29 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import personPlaceholder from "@/assets/person-placeholder.jpg";
 
+// Real team member photos
+import epemaPhoto from "@/assets/people/epema.webp";
+import atasuPhoto from "@/assets/people/atasu.jpg";
+import pouvelsePhoto from "@/assets/people/pouwelse.webp";
+import ychenPhoto from "@/assets/people/ychen.jpg";
+import decouchantPhoto from "@/assets/people/decouchant.jpg";
+import katsifodimosPhoto from "@/assets/people/katsifodimos.jpg";
+import christodoulouPhoto from "@/assets/people/christodoulou.jpeg";
+import jhuangPhoto from "@/assets/people/jhuang.png";
+import stokkinkPhoto from "@/assets/people/stokkink.jpg";
+import akyildizPhoto from "@/assets/people/akyildiz.jpg";
+import bilgiPhoto from "@/assets/people/cbilgi.jpg";
+import chotkanPhoto from "@/assets/people/chotkan.jpg";
+import coxPhoto from "@/assets/people/cox.png";
+import gregoriadisPhoto from "@/assets/people/gregoriadis.jpg";
+
 const People = () => {
   // Actual team data from dis-delft.github.io
   const faculty = [
     {
       name: "Dick Epema",
       role: "Emeritus Professor",
-      image: personPlaceholder,
+      image: epemaPhoto,
       research: ["Distributed Systems", "Performance Analysis", "Grid Computing"],
       email: "d.h.j.epema@tudelft.nl",
       office: "060 East 1st floor",
@@ -23,7 +39,7 @@ const People = () => {
     {
       name: "Kubilay Atasu", 
       role: "Associate Professor",
-      image: personPlaceholder,
+      image: atasuPhoto,
       research: ["Computer Architecture", "FPGA Computing", "Hardware Acceleration"],
       email: "k.atasu@tudelft.nl",
       office: "1.E180",
@@ -34,7 +50,7 @@ const People = () => {
     {
       name: "Johan Pouwelse",
       role: "Associate Professor", 
-      image: personPlaceholder,
+      image: pouvelsePhoto,
       research: ["Blockchain Technology", "Peer-to-Peer Systems", "Decentralized Systems"],
       email: "j.a.pouwelse@tudelft.nl",
       office: "340 East 1st Floor",
@@ -44,7 +60,7 @@ const People = () => {
     {
       name: "Lydia Chen",
       role: "Associate Professor", 
-      image: personPlaceholder,
+      image: ychenPhoto,
       research: ["Machine Learning Systems", "Cloud Computing", "Performance Modeling"],
       email: "lydiay.chen@tudelft.nl",
       office: "1.E.080",
@@ -55,7 +71,7 @@ const People = () => {
     {
       name: "Jérémie Decouchant",
       role: "Assistant Professor", 
-      image: personPlaceholder,
+      image: decouchantPhoto,
       research: ["Distributed Algorithms", "Fault Tolerance", "Byzantine Systems"],
       email: "j.decouchant@tudelft.nl",
       office: "1.E.280",
@@ -67,7 +83,7 @@ const People = () => {
     {
       name: "Asterios Katsifodimos",
       role: "Assistant Professor", 
-      image: personPlaceholder,
+      image: katsifodimosPhoto,
       research: ["Stream Processing", "Big Data Systems", "Distributed Analytics"],
       email: "a.katsifodimos@tudelft.nl",
       profileUrl: "https://dis-delft.github.io/katsifodimos",
@@ -81,7 +97,7 @@ const People = () => {
     {
       name: "George Christodoulou",
       role: "Postdoctoral Researcher",
-      image: personPlaceholder,
+      image: christodoulouPhoto,
       research: ["Distributed Systems", "Performance Analysis", "Cloud Computing"],
       email: "g.christodoulou@tudelft.nl",
       office: "1.E.240",
@@ -92,7 +108,7 @@ const People = () => {
     {
       name: "Jiyue (Gill) Huang",
       role: "Postdoctoral Researcher",
-      image: personPlaceholder,
+      image: jhuangPhoto,
       research: ["Machine Learning", "Distributed AI", "Federated Learning"],
       email: "j.huang-6@tudelft.nl", 
       office: "1.E.200",
@@ -103,7 +119,7 @@ const People = () => {
     {
       name: "Quinten Stokkink",
       role: "Postdoctoral Researcher",
-      image: personPlaceholder,
+      image: stokkinkPhoto,
       research: ["Blockchain", "Peer-to-Peer Networks", "Decentralized Systems"],
       email: "q.stokkink@tudelft.nl",
       office: "420 East 1st floor",
@@ -116,7 +132,7 @@ const People = () => {
     {
       name: "Taha Atahan Akyildiz",
       role: "PhD Candidate",
-      image: personPlaceholder,
+      image: akyildizPhoto,
       research: ["Distributed Systems", "Performance Analysis"],
       email: "t.a.akyildiz@tudelft.nl",
       office: "1.E.060",
@@ -127,7 +143,7 @@ const People = () => {
     {
       name: "Halil Cagri Bilgi",
       role: "PhD Candidate", 
-      image: personPlaceholder,
+      image: bilgiPhoto,
       research: ["Machine Learning Systems", "Distributed Computing"],
       email: "h.c.bilgi@tudelft.nl",
       office: "1.E.060",
@@ -138,7 +154,7 @@ const People = () => {
     {
       name: "Rowdy Chotkan",
       role: "PhD Candidate",
-      image: personPlaceholder,
+      image: chotkanPhoto,
       research: ["Blockchain Technology", "Decentralized Systems"],
       email: "r.chotkan@tudelft.nl",
       office: "400 West 1st floor",
@@ -149,7 +165,7 @@ const People = () => {
     {
       name: "Bart Cox",
       role: "PhD Candidate",
-      image: personPlaceholder,
+      image: coxPhoto,
       research: ["Data Science", "Machine Learning"],
       email: "b.cox@tudelft.nl", 
       office: "1.E.200",
@@ -160,7 +176,7 @@ const People = () => {
     {
       name: "Marcel Gregoriadis",
       role: "PhD Candidate",
-      image: personPlaceholder,
+      image: gregoriadisPhoto,
       research: ["Blockchain", "Distributed Ledger Technology"],
       email: "m.gregoriadis@tudelft.nl",
       office: "420 East 1st floor",
