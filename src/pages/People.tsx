@@ -482,12 +482,12 @@ const People = () => {
               </div>
             </div>
             
-            <div className="grid lg:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {researchers.map((person, index) => (
                 <div 
                   key={person.name}
                   className="animate-slide-up"
-                  style={{ animationDelay: `${index * 100}ms` }}
+                  style={{ animationDelay: `${index * 50}ms` }}
                 >
                   <PersonCard person={person} />
                 </div>
