@@ -271,6 +271,35 @@ const People = () => {
     }
   ];
 
+  const supportStaff = [
+    {
+      name: "Egbert Bouman",
+      role: "Developer",
+      image: personPlaceholder,
+      research: ["Software Development", "System Administration"],
+      email: "e.bouman@tudelft.nl",
+      office: "1.E.320",
+      profileUrl: "https://dis-delft.github.io/bouman",
+      github: "https://github.com/egbertbouman"
+    },
+    {
+      name: "Marja de Graaf",
+      role: "Secretary",
+      image: personPlaceholder,
+      research: ["Administrative Support"],
+      email: "m.degraaf@tudelft.nl",
+      office: "3.E.320"
+    },
+    {
+      name: "Kim Boudewijn",
+      role: "Secretary",
+      image: personPlaceholder,
+      research: ["Administrative Support"],
+      email: "k.boudewijn@tudelft.nl", 
+      office: "1.W.640"
+    }
+  ];
+
   const PersonCard = ({ person, showBio = false }: { person: any, showBio?: boolean }) => (
     <Card className="group overflow-hidden hover:shadow-elegant transition-all duration-300 border-border/50">
       <CardContent className="p-0">
@@ -428,14 +457,14 @@ const People = () => {
               </div>
             </div>
             
-            <div className="grid lg:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {faculty.map((person, index) => (
                 <div 
                   key={person.name}
                   className="animate-slide-up"
-                  style={{ animationDelay: `${index * 100}ms` }}
+                  style={{ animationDelay: `${index * 50}ms` }}
                 >
-                  <PersonCard person={person} showBio={true} />
+                  <PersonCard person={person} />
                 </div>
               ))}
             </div>
@@ -503,60 +532,16 @@ const People = () => {
               </div>
             </div>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <Card className="hover:shadow-elegant transition-all duration-300 border-border/50">
-                <CardContent className="p-6">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-gradient-hero rounded-full flex items-center justify-center">
-                      <Users2 className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-academic">Egbert Bouman</h3>
-                      <p className="text-muted-foreground">Developer</p>
-                      <p className="text-sm text-muted-foreground">Office: 1.E.320</p>
-                      <a 
-                        href="https://github.com/egbertbouman" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center text-primary hover:text-primary/70 transition-colors text-sm mt-1"
-                      >
-                        <ExternalLink className="w-3 h-3 mr-1" />
-                        GitHub
-                      </a>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="hover:shadow-elegant transition-all duration-300 border-border/50">
-                <CardContent className="p-6">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-gradient-accent rounded-full flex items-center justify-center">
-                      <Users2 className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-academic">Marja de Graaf</h3>
-                      <p className="text-muted-foreground">Secretary</p>
-                      <p className="text-sm text-muted-foreground">Office: 3.E.320</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="hover:shadow-elegant transition-all duration-300 border-border/50">
-                <CardContent className="p-6">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-gradient-accent rounded-full flex items-center justify-center">
-                      <Users2 className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-academic">Kim Boudewijn</h3>
-                      <p className="text-muted-foreground">Secretary</p>
-                      <p className="text-sm text-muted-foreground">Office: 1.W.640</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {supportStaff.map((person, index) => (
+                <div 
+                  key={person.name}
+                  className="animate-slide-up"
+                  style={{ animationDelay: `${index * 50}ms` }}
+                >
+                  <PersonCard person={person} />
+                </div>
+              ))}
             </div>
           </div>
 
