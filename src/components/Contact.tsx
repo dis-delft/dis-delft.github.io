@@ -16,12 +16,6 @@ const Contact = () => {
       title: "Email",
       content: "Kim Boudewijn <K.Boudewijn@tudelft.nl>",
       details: "For general inquiries about our research group"
-    },
-    {
-      icon: Phone,
-      title: "Phone",
-      content: "+31 15 278 9111",
-      details: "TU Delft main reception"
     }
   ];
 
@@ -72,7 +66,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Information Cards */}
-        <div className="grid md:grid-cols-3 gap-6 mb-16">
+        <div className="grid md:grid-cols-2 gap-6 mb-16">
           {contactInfo.map((item, index) => (
             <Card 
               key={item.title}
