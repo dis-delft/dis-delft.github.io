@@ -57,8 +57,10 @@ const Hero = () => {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-            <Button variant="outline" size="lg" className="bg-white/10 border-white/30 text-white hover:bg-white/20">
-              Meet Our Team
+            <Button variant="outline" size="lg" className="bg-white/10 border-white/30 text-white hover:bg-white/20" asChild>
+              <Link to="/people">
+                Meet Our Team
+              </Link>
             </Button>
           </div>
 
