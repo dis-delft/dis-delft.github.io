@@ -45,7 +45,7 @@ const ResearchAreas = () => {
         "Decentralized Systems",
         "Fault Tolerance"
       ],
-      color: "from-academic to-primary-light"
+      color: "from-secondary to-accent"
     }
   ];
 
