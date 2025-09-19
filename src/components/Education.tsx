@@ -32,7 +32,7 @@ const Education = () => {
           <Badge variant="outline" className="mb-4 text-primary border-primary/20">
             Education & Learning
           </Badge>
-          <h2 className="text-4xl md:text-5xl font-bold text-gradient-primary mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent">
             Teaching Excellence
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

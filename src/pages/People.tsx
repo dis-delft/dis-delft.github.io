@@ -415,7 +415,7 @@ const People = () => {
             <Badge variant="outline" className="mb-4 text-primary border-primary/20">
               Our Team
             </Badge>
-            <h1 className="text-4xl md:text-5xl font-bold text-gradient-primary mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent">
               Meet Our Researchers
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
