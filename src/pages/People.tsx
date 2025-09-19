@@ -17,7 +17,7 @@ import katsifodimosPhoto from "@/assets/people/katsifodimos.jpg";
 import christodoulouPhoto from "@/assets/people/christodoulou.jpeg";
 import jhuangPhoto from "@/assets/people/jhuang.png";
 import stokkinkPhoto from "@/assets/people/stokkink.jpg";
-import akyildizPhoto from "@/assets/people/akyildiz.jpg";
+
 import bilgiPhoto from "@/assets/people/cbilgi.jpg";
 import chotkanPhoto from "@/assets/people/chotkan.jpg";
 import coxPhoto from "@/assets/people/cox.png";
@@ -138,17 +138,6 @@ const People = () => {
   ];
 
   const phd_students = [
-    {
-      name: "Taha Atahan Akyildiz",
-      role: "PhD Candidate",
-      image: akyildizPhoto,
-      research: ["Distributed Systems", "Performance Analysis"],
-      email: "t.a.akyildiz@tudelft.nl",
-      office: "1.E.060",
-      profileUrl: "https://dis-delft.github.io/akyildiz",
-      linkedin: "https://www.linkedin.com/in/taha-atahan-aky%C4%B1ld%C4%B1z-8b2321123/",
-      github: "https://github.com/Atahanak/"
-    },
     {
       name: "Halil Cagri Bilgi",
       role: "PhD Candidate", 
