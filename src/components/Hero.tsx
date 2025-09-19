@@ -44,8 +44,8 @@ const Hero = () => {
           <div className="rounded-xl p-6 md:p-8 mb-12 max-w-2xl mx-auto bg-secondary/70 shadow-elegant">
             <p className="text-lg text-secondary-foreground leading-relaxed">
                   The <strong>mission</strong> of the DIS group is to model, design, implement, 
-                  and analyze systems and methods for data-intensive systems. Our research departs from real-world applications, 
-                  making fundamental scientific contributions.
+                  and analyze systems and methods for data-intensive systems. Inspired by real-world applications, 
+                  our research focuses on fundamental scientific contributions.
             </p>
           </div>
 
