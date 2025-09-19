@@ -9,19 +9,6 @@ import dataManagement from "@/assets/data-management.jpg";
 const ResearchAreas = () => {
   const areas = [
     {
-      icon: Database,
-      title: "Data Management",
-      description: "Research in data-intensive systems, and data integration for modern distributed computing environments.",
-      image: dataManagement,
-      highlights: [
-        "Big Data Processing",
-        "Data Integration",
-        "Distributed Databases",
-        "Stream Processing"
-      ],
-      color: "from-accent to-accent-light"
-    },
-    {
       icon: Brain,
       title: "Machine Learning & AI Systems",
       description: "Researching the principles and practices for enabling machine learning in large-scale distributed & federated systems.",
@@ -33,6 +20,19 @@ const ResearchAreas = () => {
         "Performance Optimization"
       ],
       color: "from-primary to-academic"
+    },
+    {
+      icon: Database,
+      title: "Scalable Data Systems",
+      description: "Research in data-intensive systems, and data integration for modern distributed computing environments.",
+      image: dataManagement,
+      highlights: [
+        "Big Data Processing",
+        "Data Integration",
+        "Distributed Databases",
+        "Stream Processing"
+      ],
+      color: "from-accent to-accent-light"
     },
     {
       icon: Shield,
