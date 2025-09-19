@@ -419,8 +419,8 @@ const People = () => {
               Meet the Group
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              A diverse team of world-class researchers, educators, and students working together 
-              to advance the frontiers of data-intensive systems and distributed computing.
+              A diverse team of researchers, educators, and students working together 
+              on data-intensive systems and distributed computing.
             </p>
           </div>
 
