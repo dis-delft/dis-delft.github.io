@@ -68,17 +68,6 @@ const People = () => {
       bio: "Associate Professor leading research in blockchain and peer-to-peer systems."
     },
     {
-      name: "Lydia Chen",
-      role: "Associate Professor", 
-      image: ychenPhoto,
-      research: ["Machine Learning Systems", "Cloud Computing", "Performance Modeling"],
-      email: "lydiay.chen@tudelft.nl",
-      office: "1.E.080",
-      profileUrl: "https://dis-delft.github.io/ychen",
-      linkedin: "https://www.linkedin.com/in/lydia-y-chen-65b7136/",
-      bio: "Associate Professor focusing on machine learning systems and cloud performance."
-    },
-    {
       name: "Jérémie Decouchant",
       role: "Assistant Professor", 
       image: decouchantPhoto,
@@ -89,6 +78,17 @@ const People = () => {
       linkedin: "https://www.linkedin.com/in/jeremie-decouchant",
       github: "https://github.com/jdecouchant",
       bio: "Assistant Professor specializing in distributed algorithms and fault-tolerant systems."
+    },
+    {
+      name: "Lydia Chen",
+      role: "Associate Professor", 
+      image: ychenPhoto,
+      research: ["Machine Learning Systems", "Cloud Computing", "Performance Modeling"],
+      email: "lydiay.chen@tudelft.nl",
+      office: "1.E.080",
+      profileUrl: "https://dis-delft.github.io/ychen",
+      linkedin: "https://www.linkedin.com/in/lydia-y-chen-65b7136/",
+      bio: "Associate Professor focusing on machine learning systems and cloud performance."
     },
     {
       name: "Dick Epema",
