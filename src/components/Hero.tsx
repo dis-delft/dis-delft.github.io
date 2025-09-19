@@ -1,13 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Users, BookOpen, Target } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import heroNetworkBg from "@/assets/hero-network-bg.jpg";
 
 const Hero = () => {
-  const stats = [
-    { icon: Target, label: "Research Areas", value: "3" },
-    { icon: Users, label: "Team Members", value: "20+" },
-    { icon: BookOpen, label: "Publications", value: "100+" },
-  ];
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -64,20 +59,6 @@ const Hero = () => {
             </Button>
           </div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mx-auto">
-            {stats.map((stat, index) => (
-              <div
-                key={stat.label}
-                className="glass-card p-6 text-center group hover:shadow-glow transition-all duration-300"
-                style={{ animationDelay: `${index * 200}ms` }}
-              >
-                <stat.icon className="w-8 h-8 text-accent mx-auto mb-3 group-hover:scale-110 transition-transform duration-200" />
-                <div className="text-3xl font-bold text-white mb-1">{stat.value}</div>
-                <div className="text-white/70 text-sm">{stat.label}</div>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
 
