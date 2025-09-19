@@ -4,24 +4,6 @@ import { Badge } from "@/components/ui/badge";
 import { Mail, MapPin, Phone, ExternalLink, Github, Linkedin } from "lucide-react";
 
 const Footer = () => {
-  const contactInfo = [
-    {
-      icon: MapPin,
-      title: "Address",
-      content: "Van Mourik Broekmanweg 6, 2628 XE Delft, The Netherlands"
-    },
-    {
-      icon: Mail,
-      title: "Email",
-      content: "info-st@tudelft.nl"
-    },
-    {
-      icon: Phone,
-      title: "Phone",
-      content: "+31 15 278 9111"
-    }
-  ];
-
   const quickLinks = [
     { name: "Research Publications", href: "/publications" },
     { name: "Team Members", href: "/people" },
@@ -39,51 +21,8 @@ const Footer = () => {
 
   return (
     <footer className="bg-secondary/20 border-t border-border/50">
-      {/* Contact Section */}
-      <section id="contact" className="py-16">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-12 animate-slide-up">
-            <Badge variant="outline" className="mb-4 text-primary border-primary/20">
-              Get In Touch
-            </Badge>
-            <h2 className="text-3xl md:text-4xl font-bold text-gradient-primary mb-4">
-              Contact Us
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Interested in collaboration, research opportunities, or have questions about our work? 
-              We'd love to hear from you.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
-            {contactInfo.map((item, index) => (
-              <Card 
-                key={item.title}
-                className="group hover:shadow-elegant transition-all duration-300 animate-slide-up"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <CardContent className="p-6 text-center">
-                  <div className="w-12 h-12 bg-gradient-hero rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-200">
-                    <item.icon className="w-6 h-6 text-white" />
-                  </div>
-                  <h3 className="font-semibold text-academic mb-2">{item.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{item.content}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          <div className="text-center animate-slide-up" style={{ animationDelay: '400ms' }}>
-            <Button className="bg-gradient-hero hover:shadow-glow transition-all duration-300">
-              <Mail className="mr-2 w-4 h-4" />
-              Send Us an Email
-            </Button>
-          </div>
-        </div>
-      </section>
-
       {/* Footer Navigation */}
-      <div className="border-t border-border/50 py-12">
+      <div className="py-12">
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Brand */}
