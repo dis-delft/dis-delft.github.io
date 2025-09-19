@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import heroNetworkBg from "@/assets/hero-network-bg.jpg";
+import heroSystemsBg from "@/assets/hero-systems-bg.jpg";
 
 const Hero = () => {
 
@@ -9,7 +9,7 @@ const Hero = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src={heroNetworkBg}
+          src={heroSystemsBg}
           alt="Network visualization background"
           className="w-full h-full object-cover"
         />
