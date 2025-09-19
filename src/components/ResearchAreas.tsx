@@ -63,7 +63,7 @@ const ResearchAreas = () => {
             Our Research Areas
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Exploring the frontiers of distributed systems through three interconnected research domains, 
+            Exploring the frontiers of data-intensive systems through three interconnected research domains, 
             each addressing critical challenges in modern computing.
           </p>
         </div>
