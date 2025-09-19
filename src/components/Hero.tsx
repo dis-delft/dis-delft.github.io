@@ -41,7 +41,7 @@ const Hero = () => {
           </p>
 
           {/* Mission Statement */}
-          <div className="glass-card rounded-xl p-6 md:p-8 mb-12 max-w-2xl mx-auto bg-accent/20 backdrop-blur-sm">
+          <div className="glass-card rounded-xl p-6 md:p-8 mb-12 max-w-2xl mx-auto bg-accent backdrop-blur-sm">
             <p className="text-lg text-foreground/90 leading-relaxed italic">
                   The <strong>mission</strong> of the DIS group is to model, design, implement, 
                   and analyze systems and methods for data-intensive applications. Our research is both fundamental 
