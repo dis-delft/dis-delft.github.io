@@ -24,6 +24,11 @@ import coxPhoto from "@/assets/people/cox.png";
 import gregoriadisPhoto from "@/assets/people/gregoriadis.jpg";
 import psarakisPhoto from "@/assets/people/psarakis.webp";
 import jmgaljaard from "@/assets/people/jmgaljaard.jpg";
+import mrazPhoto from "@/assets/people/mraz.jpg";
+import nasrulinPhoto from "@/assets/people/nasrulin.jpg";
+import shankarPhoto from "@/assets/people/shankar.jpg";
+import zhuPhoto from "@/assets/people/zhu.jpg";
+import boumanPhoto from "@/assets/people/bouman.jpg";
 
 const People = () => {
   // Actual team data from dis-delft.github.io
@@ -199,7 +204,7 @@ const People = () => {
     {
       name: "Oto Mráz",
       role: "PhD Candidate",
-      image: personPlaceholder,
+      image: mrazPhoto,
       research: ["Distributed Computing", "Performance Analysis"],
       email: "o.mraz@tudelft.nl",
       office: "240 East 1st floor",
@@ -210,7 +215,7 @@ const People = () => {
     {
       name: "Bulat Nasrulin",
       role: "PhD Candidate",
-      image: personPlaceholder,
+      image: nasrulinPhoto,
       research: ["Peer-to-Peer Systems", "Distributed Networks"],
       email: "b.nasrulin@tudelft.nl",
       office: "400 East 1st floor",
@@ -241,7 +246,7 @@ const People = () => {
     {
       name: "Aditya Shankar",
       role: "PhD Candidate",
-      image: personPlaceholder,
+      image: shankarPhoto,
       research: ["Cloud Computing", "Distributed Systems"],
       email: "a.shankar@tudelft.nl",
       office: "3.W.920 or 1.E.040",
@@ -252,7 +257,7 @@ const People = () => {
     {
       name: "Chaoyi Zhu",
       role: "PhD Candidate",
-      image: personPlaceholder,
+      image: zhuPhoto,
       research: ["Machine Learning", "Data Analytics"],
       email: "c.zhu@tudelft.nl",
       office: "1.E.040",
@@ -266,7 +271,7 @@ const People = () => {
     {
       name: "Egbert Bouman",
       role: "Developer",
-      image: personPlaceholder,
+      image: boumanPhoto,
       research: ["Software Development", "System Administration"],
       email: "e.bouman@tudelft.nl",
       office: "1.E.320",
