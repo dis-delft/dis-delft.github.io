@@ -35,7 +35,7 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <a href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-200 cursor-pointer">
             <div className="w-10 h-10 bg-gradient-hero rounded-lg flex items-center justify-center shadow-glow">
               <span className="text-white font-bold text-lg">DIS</span>
             </div>
@@ -45,7 +45,7 @@ const Header = () => {
               </h1>
               <p className="text-sm text-muted-foreground">TU Delft</p>
             </div>
-          </div>
+          </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
