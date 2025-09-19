@@ -31,8 +31,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto animate-slide-up">
           {/* Main Title */}
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
-            Data-Intensive
-            <span className="block text-gradient-accent">Systems</span>
+            Data-Intensive <span className="text-gradient-accent">Systems</span>
           </h1>
 
           {/* Subtitle */}
