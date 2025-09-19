@@ -524,30 +524,6 @@ const People = () => {
             </div>
           </div>
 
-          {/* Join Us CTA */}
-          <div className="text-center mb-20 animate-slide-up" style={{ animationDelay: '800ms' }}>
-            <Card className="max-w-2xl mx-auto bg-gradient-card border-border/50">
-              <CardContent className="p-8">
-                <GraduationCap className="w-12 h-12 text-primary mx-auto mb-4" />
-                <h3 className="text-2xl font-bold mb-4 text-academic">
-                  Join Our Research Group
-                </h3>
-                <p className="text-foreground/80 mb-6 leading-relaxed">
-                  Interested in pursuing a PhD or postdoctoral research in distributed systems? 
-                  We're always looking for talented researchers to join our team.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                  <Button className="bg-gradient-hero hover:shadow-glow transition-all duration-300">
-                    <Mail className="mr-2 w-4 h-4" />
-                    Contact Us About Positions
-                  </Button>
-                  <Button variant="outline" className="border-primary/20 hover:bg-primary/5">
-                    View Current Openings
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
         </div>
       </main>
 
