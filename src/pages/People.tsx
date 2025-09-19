@@ -134,6 +134,16 @@ const People = () => {
       office: "420 East 1st floor",
       profileUrl: "https://dis-delft.github.io/stokkink",
       github: "https://github.com/qstokkink"
+    },
+    {
+      name: "Egbert Bouman",
+      role: "Research Engineer",
+      image: boumanPhoto,
+      research: ["Software Development", "System Administration"],
+      email: "e.bouman@tudelft.nl",
+      office: "1.E.320",
+      profileUrl: "https://dis-delft.github.io/bouman",
+      github: "https://github.com/egbertbouman"
     }
   ];
 
@@ -259,16 +269,6 @@ const People = () => {
   ];
 
   const supportStaff = [
-    {
-      name: "Egbert Bouman",
-      role: "Developer",
-      image: boumanPhoto,
-      research: ["Software Development", "System Administration"],
-      email: "e.bouman@tudelft.nl",
-      office: "1.E.320",
-      profileUrl: "https://dis-delft.github.io/bouman",
-      github: "https://github.com/egbertbouman"
-    },
     {
       name: "Kim Boudewijn",
       role: "Secretary",
