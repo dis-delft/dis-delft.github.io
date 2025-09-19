@@ -23,9 +23,9 @@ const Footer = () => {
   ];
 
   const quickLinks = [
-    { name: "Research Publications", href: "#publications" },
-    { name: "Team Members", href: "#people" },
-    { name: "Course Information", href: "#education" },
+    { name: "Research Publications", href: "/publications" },
+    { name: "Team Members", href: "/people" },
+    { name: "Course Information", href: "/teaching" },
     { name: "Delft Blockchain Lab", href: "#blockchain-lab", external: true },
     { name: "TU Delft", href: "https://tudelft.nl", external: true },
     { name: "Software Technology Dept", href: "#department", external: true }
