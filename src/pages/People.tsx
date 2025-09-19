@@ -47,16 +47,6 @@ const People = () => {
       bio: "Assistant Professor and Group Head leading research in stream processing and big data systems."
     },
     {
-      name: "Dick Epema",
-      role: "Emeritus Professor",
-      image: epemaPhoto,
-      research: ["Distributed Systems", "Performance Analysis", "Grid Computing"],
-      email: "d.h.j.epema@tudelft.nl",
-      office: "060 East 1st floor",
-      profileUrl: "https://dis-delft.github.io/epema",
-      bio: "Emeritus Professor with extensive expertise in distributed systems and performance analysis."
-    },
-    {
       name: "Kubilay Atasu", 
       role: "Associate Professor",
       image: atasuPhoto,
@@ -99,6 +89,16 @@ const People = () => {
       linkedin: "https://www.linkedin.com/in/jeremie-decouchant",
       github: "https://github.com/jdecouchant",
       bio: "Assistant Professor specializing in distributed algorithms and fault-tolerant systems."
+    },
+    {
+      name: "Dick Epema",
+      role: "Emeritus Professor",
+      image: epemaPhoto,
+      research: ["Distributed Systems", "Performance Analysis", "Grid Computing"],
+      email: "d.h.j.epema@tudelft.nl",
+      office: "060 East 1st floor",
+      profileUrl: "https://dis-delft.github.io/epema",
+      bio: "Emeritus Professor with extensive expertise in distributed systems and performance analysis."
     }
   ];
 
