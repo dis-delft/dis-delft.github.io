@@ -271,7 +271,7 @@ const People = () => {
   const supportStaff = [
     {
       name: "Kim Boudewijn",
-      role: "Secretary",
+      role: "Management Assistant",
       image: kboudewijnPhoto,
       research: ["Administrative Support"],
       email: "k.boudewijn@tudelft.nl", 
