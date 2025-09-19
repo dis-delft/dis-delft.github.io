@@ -270,14 +270,6 @@ const People = () => {
       github: "https://github.com/egbertbouman"
     },
     {
-      name: "Marja de Graaf",
-      role: "Secretary",
-      image: degraafPhoto,
-      research: ["Administrative Support"],
-      email: "m.degraaf@tudelft.nl",
-      office: "3.E.320"
-    },
-    {
       name: "Kim Boudewijn",
       role: "Secretary",
       image: kboudewijnPhoto,
