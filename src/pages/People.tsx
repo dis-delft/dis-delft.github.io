@@ -22,6 +22,7 @@ import bilgiPhoto from "@/assets/people/cbilgi.jpg";
 import chotkanPhoto from "@/assets/people/chotkan.jpg";
 import coxPhoto from "@/assets/people/cox.png";
 import gregoriadisPhoto from "@/assets/people/gregoriadis.jpg";
+import psarakisPhoto from "@/assets/people/psarakis.webp";
 
 const People = () => {
   // Actual team data from dis-delft.github.io
@@ -228,7 +229,7 @@ const People = () => {
     {
       name: "Kyriakos Psarakis",
       role: "PhD Candidate",
-      image: personPlaceholder,
+      image: psarakisPhoto,
       research: ["Stream Processing", "Big Data Systems"],
       email: "k.psarakis@tudelft.nl",
       office: "1.E.240",
