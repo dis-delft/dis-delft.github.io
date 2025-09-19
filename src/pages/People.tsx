@@ -60,7 +60,7 @@ const People = () => {
       name: "Kubilay Atasu", 
       role: "Associate Professor",
       image: atasuPhoto,
-      research: ["Computer Architecture", "FPGA Computing", "Hardware Acceleration"],
+      research: ["Machine Learning", "Graph Neural Networks", "Hardware Acceleration"],
       email: "k.atasu@tudelft.nl",
       office: "1.E180",
       profileUrl: "https://dis-delft.github.io/atasu",
