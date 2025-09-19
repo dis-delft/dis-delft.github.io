@@ -14,10 +14,10 @@ const ResearchAreas = () => {
       description: "Researching the principles and practices for enabling machine learning in large-scale distributed & federated systems.",
       image: mlSystems,
       highlights: [
+        "Graph Neural Networks",
         "Distributed ML Algorithms",
         "Federated Learning Systems",
-        "Large-scale AI Infrastructure",
-        "Performance Optimization"
+        "Large-scale AI Infrastructure"
       ],
       color: "from-primary to-academic"
     },
@@ -30,6 +30,7 @@ const ResearchAreas = () => {
         "Big Data Processing",
         "Data Integration",
         "Distributed Databases",
+        "Serverless Systems",
         "Stream Processing"
       ],
       color: "from-accent to-accent-light"
