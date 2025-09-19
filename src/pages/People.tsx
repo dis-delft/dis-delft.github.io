@@ -449,6 +449,31 @@ const People = () => {
             </div>
           </div>
 
+          {/* Support Staff Section */}
+          <div className="mb-20">
+            <div className="flex items-center mb-8 animate-slide-up">
+              <div className="w-12 h-12 bg-muted rounded-xl flex items-center justify-center mr-4">
+                <Users2 className="w-6 h-6 text-muted-foreground" />
+              </div>
+              <div>
+                <h2 className="text-2xl font-bold text-academic">Support Staff</h2>
+                <p className="text-muted-foreground">Essential team members</p>
+              </div>
+            </div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {supportStaff.map((person, index) => (
+                <div 
+                  key={person.name}
+                  className="animate-slide-up"
+                  style={{ animationDelay: `${index * 50}ms` }}
+                >
+                  <PersonCard person={person} />
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* Researchers Section */}
           <div className="mb-20">
             <div className="flex items-center mb-8 animate-slide-up">
@@ -488,31 +513,6 @@ const People = () => {
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {phd_students.map((person, index) => (
-                <div 
-                  key={person.name}
-                  className="animate-slide-up"
-                  style={{ animationDelay: `${index * 50}ms` }}
-                >
-                  <PersonCard person={person} />
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Support Staff Section */}
-          <div className="mb-12">
-            <div className="flex items-center mb-8 animate-slide-up">
-              <div className="w-12 h-12 bg-muted rounded-xl flex items-center justify-center mr-4">
-                <Users2 className="w-6 h-6 text-muted-foreground" />
-              </div>
-              <div>
-                <h2 className="text-2xl font-bold text-academic">Support Staff</h2>
-                <p className="text-muted-foreground">Essential team members</p>
-              </div>
-            </div>
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-              {supportStaff.map((person, index) => (
                 <div 
                   key={person.name}
                   className="animate-slide-up"
