@@ -5,7 +5,7 @@ import { Mail, Linkedin, ExternalLink, MapPin, GraduationCap, ArrowLeft, Users2 
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import personPlaceholder from "@/assets/person-placeholder.jpg";
+import pneaguePhoto from "@/assets/people/pneague.jpg";
 
 // Real team member photos
 import epemaPhoto from "@/assets/people/epema.webp";
@@ -216,7 +216,7 @@ const People = () => {
     {
       name: "Petru Mihai Neague",
       role: "PhD Candidate",
-      image: personPlaceholder,
+      image: pneaguePhoto,
       research: ["Distributed Systems", "Cloud Computing"],
       email: "p.m.neague@tudelft.nl",
       profileUrl: "https://dis-delft.github.io/neague",
