@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Home } from "lucide-react";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,6 +16,7 @@ const Header = () => {
   }, []);
 
   const navigation = [
+    { name: "Home", href: "/" },
     { name: "Research", href: "/research" },
     { name: "People", href: "/people" },
     { name: "Publications", href: "/publications" },
