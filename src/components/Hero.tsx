@@ -30,7 +30,7 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto animate-slide-up">
           {/* Main Title */}
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
             Data-Intensive
             <span className="block text-gradient-accent">Systems</span>
           </h1>
