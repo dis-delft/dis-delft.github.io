@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroSystemsBg from "@/assets/hero-network-bg.jpg";
 
 const Hero = () => {
@@ -50,9 +51,11 @@ const Hero = () => {
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-            <Button size="lg" className="bg-accent hover:bg-accent-light text-accent-foreground shadow-glow">
-              Explore Research
-              <ArrowRight className="ml-2 h-5 w-5" />
+            <Button size="lg" className="bg-accent hover:bg-accent-light text-accent-foreground shadow-glow" asChild>
+              <Link to="/research">
+                Explore Research
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
             </Button>
             <Button variant="outline" size="lg" className="bg-white/10 border-white/30 text-white hover:bg-white/20">
               Meet Our Team
