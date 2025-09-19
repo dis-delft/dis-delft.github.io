@@ -1,17 +1,17 @@
 import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import About from "@/components/About";
+import ResearchAreas from "@/components/ResearchAreas";
 import Footer from "@/components/Footer";
 
-const Index = () => {
+const Research = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <Hero />
-      <About />
+      <main className="pt-20">
+        <ResearchAreas />
+      </main>
       <Footer />
     </div>
   );
 };
 
-export default Index;
+export default Research;
