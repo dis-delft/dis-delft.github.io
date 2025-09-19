@@ -133,10 +133,12 @@ const ResearchAreas = () => {
                 We welcome partnerships with industry and academic institutions.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                <Button className="bg-gradient-hero hover:shadow-glow transition-all duration-300">
-                  View Publications
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </Button>
+                <Link to="/publications">
+                  <Button className="bg-gradient-hero hover:shadow-glow transition-all duration-300">
+                    View Publications
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </Button>
+                </Link>
                 <Link to="/people">
                   <Button variant="outline" className="border-primary/20 hover:bg-primary/5">
                     Contact Researchers
