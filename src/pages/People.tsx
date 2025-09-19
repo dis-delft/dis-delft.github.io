@@ -27,6 +27,17 @@ const People = () => {
   // Actual team data from dis-delft.github.io
   const faculty = [
     {
+      name: "Asterios Katsifodimos",
+      role: "Assistant Professor & Group Head", 
+      image: katsifodimosPhoto,
+      research: ["Stream Processing", "Big Data Systems", "Distributed Analytics"],
+      email: "a.katsifodimos@tudelft.nl",
+      profileUrl: "https://dis-delft.github.io/katsifodimos",
+      linkedin: "https://www.linkedin.com/in/asteriosk/",
+      github: "https://github.com/asteriosk",
+      bio: "Assistant Professor and Group Head leading research in stream processing and big data systems."
+    },
+    {
       name: "Dick Epema",
       role: "Emeritus Professor",
       image: epemaPhoto,
@@ -79,17 +90,6 @@ const People = () => {
       linkedin: "https://www.linkedin.com/in/jeremie-decouchant",
       github: "https://github.com/jdecouchant",
       bio: "Assistant Professor specializing in distributed algorithms and fault-tolerant systems."
-    },
-    {
-      name: "Asterios Katsifodimos",
-      role: "Assistant Professor", 
-      image: katsifodimosPhoto,
-      research: ["Stream Processing", "Big Data Systems", "Distributed Analytics"],
-      email: "a.katsifodimos@tudelft.nl",
-      profileUrl: "https://dis-delft.github.io/katsifodimos",
-      linkedin: "https://www.linkedin.com/in/asteriosk/",
-      github: "https://github.com/asteriosk",
-      bio: "Assistant Professor working on stream processing and big data systems."
     }
   ];
 
