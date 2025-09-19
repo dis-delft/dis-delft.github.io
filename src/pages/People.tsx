@@ -416,7 +416,7 @@ const People = () => {
               Our Team
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent">
-              Meet Our Researchers
+              Meet the Group
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               A diverse team of world-class researchers, educators, and students working together 
