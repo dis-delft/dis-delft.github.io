@@ -23,6 +23,7 @@ import chotkanPhoto from "@/assets/people/chotkan.jpg";
 import coxPhoto from "@/assets/people/cox.png";
 import gregoriadisPhoto from "@/assets/people/gregoriadis.jpg";
 import psarakisPhoto from "@/assets/people/psarakis.webp";
+import jmgaljaard from "@/assets/people/jmgaljaard.jpg";
 
 const People = () => {
   // Actual team data from dis-delft.github.io
@@ -188,7 +189,7 @@ const People = () => {
     {
       name: "Jeroen Martijn Galjaard",
       role: "PhD Candidate",
-      image: personPlaceholder,
+      image: jmgaljaard,
       research: ["Machine Learning", "Distributed Systems"],
       email: "j.m.galjaard@tudelft.nl",
       profileUrl: "https://dis-delft.github.io/jmgaljaard",
