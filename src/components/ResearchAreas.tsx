@@ -114,15 +114,6 @@ const ResearchAreas = () => {
                     ))}
                   </div>
                 </div>
-
-                {/* Learn More Button */}
-                <Button 
-                  variant="ghost" 
-                  className="group/btn w-full justify-between hover:bg-primary/5"
-                >
-                  Learn More
-                  <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover/btn:translate-x-1" />
-                </Button>
               </CardContent>
             </Card>
           ))}
