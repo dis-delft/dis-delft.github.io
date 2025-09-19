@@ -238,17 +238,6 @@ const People = () => {
       github: "https://github.com/kPsarakis"
     },
     {
-      name: "Marcus Schutte",
-      role: "PhD Candidate",
-      image: personPlaceholder,
-      research: ["Machine Learning", "Distributed AI"],
-      email: "m.w.schutte@tudelft.nl",
-      office: "1.E.240",
-      profileUrl: "https://dis-delft.github.io/schutte",
-      linkedin: "https://www.linkedin.com/in/marcus-schutte-0836b91b6/",
-      github: "https://github.com/mwschutte"
-    },
-    {
       name: "Aditya Shankar",
       role: "PhD Candidate",
       image: personPlaceholder,
