@@ -14,7 +14,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      content: "info-st@tudelft.nl",
+      content: "Kim Boudewijn <K.Boudewijn@tudelft.nl>",
       details: "For general inquiries about our research group"
     },
     {
@@ -174,7 +174,7 @@ const Contact = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
                 <Button className="bg-gradient-hero hover:shadow-glow transition-all duration-300" asChild>
-                  <a href="mailto:info-st@tudelft.nl">
+                  <a href="mailto:K.Boudewijn@tudelft.nl">
                     <Mail className="mr-2 w-4 h-4" />
                     Send Us an Email
                   </a>
