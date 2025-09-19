@@ -84,7 +84,7 @@ const People = () => {
       role: "Associate Professor", 
       image: ychenPhoto,
       research: ["Machine Learning Systems", "Cloud Computing", "Performance Modeling"],
-      email: "lydiay.chen@tudelft.nl",
+      email: "lydia.chen@tudelft.nl",
       office: "1.E.080",
       profileUrl: "https://dis-delft.github.io/ychen",
       linkedin: "https://www.linkedin.com/in/lydia-y-chen-65b7136/",
