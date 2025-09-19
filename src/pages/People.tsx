@@ -29,6 +29,8 @@ import nasrulinPhoto from "@/assets/people/nasrulin.jpg";
 import shankarPhoto from "@/assets/people/shankar.jpg";
 import zhuPhoto from "@/assets/people/zhu.jpg";
 import boumanPhoto from "@/assets/people/bouman.jpg";
+import degraafPhoto from "@/assets/people/degraaf.jpg";
+import kboudewijnPhoto from "@/assets/people/kboudewijn.png";
 
 const People = () => {
   // Actual team data from dis-delft.github.io
@@ -281,7 +283,7 @@ const People = () => {
     {
       name: "Marja de Graaf",
       role: "Secretary",
-      image: personPlaceholder,
+      image: degraafPhoto,
       research: ["Administrative Support"],
       email: "m.degraaf@tudelft.nl",
       office: "3.E.320"
@@ -289,7 +291,7 @@ const People = () => {
     {
       name: "Kim Boudewijn",
       role: "Secretary",
-      image: personPlaceholder,
+      image: kboudewijnPhoto,
       research: ["Administrative Support"],
       email: "k.boudewijn@tudelft.nl", 
       office: "1.W.640"
