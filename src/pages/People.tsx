@@ -11,7 +11,7 @@ import personPlaceholder from "@/assets/person-placeholder.jpg";
 import epemaPhoto from "@/assets/people/epema.webp";
 import atasuPhoto from "@/assets/people/atasu.jpg";
 import pouvelsePhoto from "@/assets/people/pouwelse.webp";
-import ychenPhoto from "@/assets/people/ychen-new.jpg";
+import ychenPhoto from "@/assets/people/ychen-tudelft.webp";
 import decouchantPhoto from "@/assets/people/decouchant.jpg";
 import katsifodimosPhoto from "@/assets/people/katsifodimos.jpg";
 import christodoulouPhoto from "@/assets/people/christodoulou.jpeg";
