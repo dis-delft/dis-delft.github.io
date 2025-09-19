@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Brain, Shield, Database } from "lucide-react";
+import { Link } from "react-router-dom";
 import mlSystems from "@/assets/ml-systems.jpg";
 import blockchainSystems from "@/assets/blockchain-systems.jpg";
 import dataManagement from "@/assets/data-management.jpg";
@@ -136,9 +137,11 @@ const ResearchAreas = () => {
                   View Publications
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
-                <Button variant="outline" className="border-primary/20 hover:bg-primary/5">
-                  Contact Researchers
-                </Button>
+                <Link to="/people">
+                  <Button variant="outline" className="border-primary/20 hover:bg-primary/5">
+                    Contact Researchers
+                  </Button>
+                </Link>
               </div>
             </CardContent>
           </Card>
