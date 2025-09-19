@@ -49,19 +49,6 @@ const About = () => {
             {/* Mission Text */}
             <div className="space-y-6 animate-slide-up" style={{ animationDelay: '200ms' }}>
               <div>
-                <h3 className="text-2xl font-bold mb-4 text-academic">Our Mission</h3>
-                <p className="text-lg text-foreground/80 leading-relaxed mb-4">
-                  The <strong>mission</strong> of the DIS group is to model, design, implement, 
-                  and analyze systems and methods for data-intensive applications. Our research is both fundamental 
-                  and application-driven.
-                </p>
-                <p className="text-lg text-foreground/80 leading-relaxed">
-                  We focus on <strong>experimental validation</strong> of new concepts through 
-                  implementation and deployment in prototypes used in the real world.
-                </p>
-              </div>
-
-              <div>
                 <h3 className="text-2xl font-bold mb-4 text-academic">Research Focus</h3>
                 <p className="text-lg text-foreground/80 leading-relaxed">
                   Our work spans <strong>distributed machine-learning systems</strong> and 
