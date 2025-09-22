@@ -17,7 +17,7 @@ const About = () => {
     {
       icon: Lightbulb,
       title: "Innovation",
-      description: "Leading the Delft Blockchain Lab and cutting-edge research"
+      description: "Leading cutting-edge research in data-intensive systems"
     },
     {
       icon: Users2,
@@ -46,18 +46,6 @@ const About = () => {
 
           {/* Main Content */}
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-            {/* Mission Text */}
-            <div className="space-y-6 animate-slide-up" style={{ animationDelay: '200ms' }}>
-              <div>
-                <h3 className="text-2xl font-bold mb-4 text-academic">Research Focus</h3>
-                <p className="text-lg text-foreground/80 leading-relaxed">
-                  Our work spans <strong>distributed machine-learning systems</strong> and 
-                  <strong>cooperative systems</strong> with a strong focus on blockchain technology. 
-                  We tackle challenges in e-science, big data processing, large-scale machine learning, 
-                  and online social networks.
-                </p>
-              </div>
-            </div>
 
             {/* Highlights Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -85,18 +73,6 @@ const About = () => {
             </div>
           </div>
 
-          {/* Key Achievement Callout */}
-          <Card className="bg-gradient-hero text-white shadow-glow animate-slide-up" style={{ animationDelay: '600ms' }}>
-            <CardContent className="p-8 text-center">
-              <Lightbulb className="w-12 h-12 mx-auto mb-4 text-accent" />
-              <h3 className="text-2xl font-bold mb-4">Leading Innovation</h3>
-              <p className="text-lg text-white/90 max-w-2xl mx-auto leading-relaxed">
-                The Data-Intensive Systems section leads the{" "}
-                <strong>Delft Blockchain Lab</strong>, pioneering research and development
-                in blockchain technology and decentralized systems.
-              </p>
-            </CardContent>
-          </Card>
         </div>
       </div>
     </section>
