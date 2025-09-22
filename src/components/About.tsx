@@ -12,7 +12,7 @@ const About = () => {
     {
       icon: GraduationCap,
       title: "Education",
-      description: "BSc & MSc courses in distributed systems, blockchain, and cloud computing"
+      description: "BSc & MSc courses in database systems, Distributed systems, Graph Neural Networks, blockchain, and cloud computing"
     },
     {
       icon: Lightbulb,
