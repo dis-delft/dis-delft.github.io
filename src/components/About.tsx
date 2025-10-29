@@ -11,9 +11,6 @@ const About = () => {
             <Badge variant="outline" className="mb-4 text-primary border-primary/20">
               About Our Group
             </Badge>
-            <h2 className="text-4xl md:text-5xl font-bold text-gradient-primary mb-6">
-              Leading Research in Data Systems
-            </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               The Data-Intensive Systems (DIS) group pushes the boundaries of data-intensive computing, 
               combining theoretical foundations with real-world applications.
