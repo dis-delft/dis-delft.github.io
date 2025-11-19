@@ -36,16 +36,16 @@ const Hero = () => {
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto">
-            Advancing the frontiers of data systems, machine learning, distributed systems, 
+            Advancing the frontiers of data systems, machine learning, distributed systems,
             and blockchain technology at <strong>TU Delft</strong>
           </p>
 
           {/* Mission Statement */}
           <div className="rounded-xl p-6 md:p-8 mb-12 max-w-2xl mx-auto bg-secondary/70 shadow-elegant">
             <p className="text-lg text-secondary-foreground leading-relaxed">
-                  The <strong>mission</strong> of the DIS group is to model, design, implement, 
-                  and analyze data-intensive systems applications. Inspired by real-world problems, 
-                  our work focuses on fundamental scientific contributions.
+              The <strong>mission</strong> of the DIS group is to model, design, implement,
+              and analyze data-intensive systems and applications. Inspired by real-world problems,
+              our work focuses on fundamental scientific contributions.
             </p>
           </div>
 
