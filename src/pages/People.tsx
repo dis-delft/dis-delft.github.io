@@ -37,7 +37,7 @@ const People = () => {
   const faculty = [
     {
       name: "Asterios Katsifodimos",
-      role: "Assistant Professor & Group Head", 
+      role: "Assistant Professor & Group Head",
       image: katsifodimosPhoto,
       research: ["Stream Processing", "Big Data Systems", "Distributed Analytics"],
       email: "a.katsifodimos@tudelft.nl",
@@ -47,7 +47,7 @@ const People = () => {
       bio: "Assistant Professor and Group Head leading research in stream processing and big data systems."
     },
     {
-      name: "Kubilay Atasu", 
+      name: "Kubilay Atasu",
       role: "Associate Professor",
       image: atasuPhoto,
       research: ["Machine Learning", "Graph Neural Networks", "Hardware Acceleration"],
@@ -59,7 +59,7 @@ const People = () => {
     },
     {
       name: "Johan Pouwelse",
-      role: "Associate Professor", 
+      role: "Associate Professor",
       image: pouvelsePhoto,
       research: ["Blockchain Technology", "Peer-to-Peer Systems", "Decentralized Systems"],
       email: "j.a.pouwelse@tudelft.nl",
@@ -69,7 +69,7 @@ const People = () => {
     },
     {
       name: "Jérémie Decouchant",
-      role: "Assistant Professor", 
+      role: "Assistant Professor",
       image: decouchantPhoto,
       research: ["Distributed Algorithms", "Fault Tolerance", "Byzantine Systems"],
       email: "j.decouchant@tudelft.nl",
@@ -81,7 +81,7 @@ const People = () => {
     },
     {
       name: "Lydia Chen",
-      role: "Associate Professor", 
+      role: "Associate Professor (part-time)",
       image: ychenPhoto,
       research: ["Machine Learning Systems", "Cloud Computing", "Performance Modeling"],
       email: "lydia.chen@tudelft.nl",
@@ -119,7 +119,7 @@ const People = () => {
       role: "Postdoctoral Researcher",
       image: jhuangPhoto,
       research: ["Machine Learning", "Distributed AI", "Federated Learning"],
-      email: "j.huang-6@tudelft.nl", 
+      email: "j.huang-6@tudelft.nl",
       office: "1.E.200",
       profileUrl: "https://dis-delft.github.io/jhuang",
       linkedin: "https://www.linkedin.com/in/jiyue-gill-huang-ab5531281/",
@@ -150,7 +150,7 @@ const People = () => {
   const phd_students = [
     {
       name: "Halil Cagri Bilgi",
-      role: "PhD Candidate", 
+      role: "PhD Candidate",
       image: bilgiPhoto,
       research: ["Machine Learning Systems", "Distributed Computing"],
       email: "h.c.bilgi@tudelft.nl",
@@ -175,7 +175,7 @@ const People = () => {
       role: "PhD Candidate",
       image: coxPhoto,
       research: ["Data Science", "Machine Learning"],
-      email: "b.cox@tudelft.nl", 
+      email: "b.cox@tudelft.nl",
       office: "1.E.200",
       profileUrl: "https://dis-delft.github.io/cox",
       linkedin: "https://www.linkedin.com/in/bart-cox/",
@@ -274,7 +274,7 @@ const People = () => {
       role: "Management Assistant",
       image: kboudewijnPhoto,
       research: ["Administrative Support"],
-      email: "k.boudewijn@tudelft.nl", 
+      email: "k.boudewijn@tudelft.nl",
       office: "1.W.640"
     }
   ];
@@ -359,14 +359,14 @@ const People = () => {
                 <span>{person.year}</span>
               </div>
             )}
-            
+
             {/* Social Links */}
             {(person.linkedin || person.github) && (
               <div className="flex items-center space-x-3 pt-2">
                 {person.linkedin && (
-                  <a 
-                    href={person.linkedin} 
-                    target="_blank" 
+                  <a
+                    href={person.linkedin}
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center text-primary hover:text-primary/70 transition-colors"
                   >
@@ -375,9 +375,9 @@ const People = () => {
                   </a>
                 )}
                 {person.github && (
-                  <a 
-                    href={person.github} 
-                    target="_blank" 
+                  <a
+                    href={person.github}
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center text-primary hover:text-primary/70 transition-colors"
                   >
@@ -396,7 +396,7 @@ const People = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       {/* Main Content */}
       <main className="pt-24">
         <div className="container mx-auto px-6">
@@ -419,7 +419,7 @@ const People = () => {
               Meet the Group
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              A diverse team of researchers, educators, and students working together 
+              A diverse team of researchers, educators, and students working together
               on data-intensive systems and distributed computing.
             </p>
           </div>
@@ -435,10 +435,10 @@ const People = () => {
                 <p className="text-muted-foreground">Leading researchers and educators</p>
               </div>
             </div>
-            
+
             <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {faculty.map((person, index) => (
-                <div 
+                <div
                   key={person.name}
                   className="animate-slide-up"
                   style={{ animationDelay: `${index * 50}ms` }}
@@ -460,10 +460,10 @@ const People = () => {
                 <p className="text-muted-foreground">Essential team members</p>
               </div>
             </div>
-            
+
             <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {supportStaff.map((person, index) => (
-                <div 
+                <div
                   key={person.name}
                   className="animate-slide-up"
                   style={{ animationDelay: `${index * 50}ms` }}
@@ -485,10 +485,10 @@ const People = () => {
                 <p className="text-muted-foreground">Postdocs and research engineers</p>
               </div>
             </div>
-            
+
             <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {researchers.map((person, index) => (
-                <div 
+                <div
                   key={person.name}
                   className="animate-slide-up"
                   style={{ animationDelay: `${index * 50}ms` }}
@@ -510,10 +510,10 @@ const People = () => {
                 <p className="text-muted-foreground">The next generation of researchers</p>
               </div>
             </div>
-            
+
             <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {phd_students.map((person, index) => (
-                <div 
+                <div
                   key={person.name}
                   className="animate-slide-up"
                   style={{ animationDelay: `${index * 50}ms` }}

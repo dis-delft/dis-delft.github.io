@@ -75,63 +75,20 @@ const Publications = () => {
             Research Publications
           </h1>
           <p className="text-xl text-foreground/70 max-w-3xl mx-auto leading-relaxed">
-            Explore our latest research contributions in distributed systems, blockchain technology, 
+            Explore our latest research contributions in distributed systems, blockchain technology,
             machine learning, and cloud computing.
           </p>
         </div>
 
         <div className="grid gap-8">
-          {publications.map((pub, index) => (
-            <Card key={index} className="glass-card hover:shadow-elegant transition-all duration-300 group">
-              <CardHeader>
-                <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-4">
-                  <div className="flex-1">
-                    <CardTitle className="text-xl mb-3 text-academic group-hover:text-primary transition-colors duration-300">
-                      {pub.title}
-                    </CardTitle>
-                    <div className="flex flex-wrap items-center gap-2 mb-3">
-                      <Badge variant={pub.type === "Journal" ? "default" : "secondary"} className="text-xs">
-                        {pub.type}
-                      </Badge>
-                      <Badge variant="outline" className="text-xs">
-                        {pub.year}
-                      </Badge>
-                      <div className="flex items-center gap-1 text-sm text-foreground/60">
-                        <Users className="w-3 h-3" />
-                        <span>{pub.citations} citations</span>
-                      </div>
-                    </div>
-                    <p className="text-sm text-foreground/70 mb-2">
-                      <strong>Authors:</strong> {pub.authors.join(", ")}
-                    </p>
-                    <p className="text-sm text-foreground/70 mb-3">
-                      <strong>Published in:</strong> {pub.venue}
-                    </p>
-                  </div>
-                  <div className="flex gap-2 shrink-0">
-                    <Button variant="outline" size="sm" className="text-xs">
-                      <ExternalLink className="w-3 h-3 mr-1" />
-                      DOI
-                    </Button>
-                    <Button variant="outline" size="sm" className="text-xs">
-                      <Download className="w-3 h-3 mr-1" />
-                      PDF
-                    </Button>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-foreground/80 leading-relaxed">
-                  {pub.abstract}
-                </p>
-                <div className="mt-4 pt-4 border-t border-border/20">
-                  <p className="text-xs text-foreground/50">
-                    DOI: {pub.doi}
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+          <script src="https://filelist.tudelft.nl/Admin/pure-converter/js/iframeResizer.min.js" nonce="a3e7cd5f81041b5c50448528a03a9bae"></script>
+          <iframe
+            src="https://purexml.ewi.tudelft.nl/direct/tu/group/bae30032-1ecb-46c4-8efb-ed9e7251d281"
+            scrolling="no"
+            aria-label="ad for publications Data Intensive Systems"
+            className="w-full border-none"
+          ></iframe>
+          <script nonce="a3e7cd5f81041b5c50448528a03a9bae">iFrameResize()</script>
         </div>
 
         <div className="mt-16 text-center">
@@ -141,7 +98,7 @@ const Publications = () => {
                 Explore More Research
               </h3>
               <p className="text-foreground/80 mb-6 leading-relaxed">
-                Looking for more publications or interested in collaboration? 
+                Looking for more publications or interested in collaboration?
                 Visit our research profiles and repositories.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
