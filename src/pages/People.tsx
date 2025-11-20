@@ -37,9 +37,9 @@ const People = () => {
   const faculty = [
     {
       name: "Asterios Katsifodimos",
-      role: "Assistant Professor & Group Head",
+      role: "Asst. Professor & Group Head",
       image: katsifodimosPhoto,
-      research: ["Stream Processing", "Big Data Systems", "Distributed Analytics"],
+      research: ["Scalable Data Management", "Cloud Data Systems", "Database Transactions"],
       email: "a.katsifodimos@tudelft.nl",
       profileUrl: "https://dis-delft.github.io/katsifodimos",
       linkedin: "https://www.linkedin.com/in/asteriosk/",

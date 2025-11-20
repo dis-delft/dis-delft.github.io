@@ -45,7 +45,7 @@ const Publications = () => {
           ></iframe>
         </div>
 
-        <div className="mt-16 text-center">
+        {/* <div className="mt-16 text-center">
           <Card className="glass-card max-w-2xl mx-auto">
             <CardContent className="pt-8">
               <h3 className="text-2xl font-bold mb-4 text-academic">
@@ -71,7 +71,7 @@ const Publications = () => {
               </div>
             </CardContent>
           </Card>
-        </div>
+        </div> */}
       </div>
     </section>
   );

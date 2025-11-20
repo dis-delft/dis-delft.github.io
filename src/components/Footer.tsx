@@ -8,14 +8,13 @@ const Footer = () => {
     { name: "Research Publications", href: "/publications" },
     { name: "Team Members", href: "/people" },
     { name: "Course Information", href: "/teaching" },
-    { name: "Delft Blockchain Lab", href: "#blockchain-lab", external: true },
+    { name: "Delft Blockchain Lab", href: "https://www.blockchain-lab.org/", external: true },
     { name: "TU Delft", href: "https://tudelft.nl", external: true },
-    { name: "Software Technology Dept", href: "#department", external: true }
+    { name: "Software Technology Dept", href: "https://www.tudelft.nl/en/eemcs/the-faculty/departments/software-technology/", external: true }
   ];
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com/dis-delft", label: "GitHub" },
-    { icon: Linkedin, href: "#linkedin", label: "LinkedIn" },
+    { icon: Github, href: "https://github.com/delftdata", label: "GitHub" },
     { icon: ExternalLink, href: "https://tudelft.nl", label: "TU Delft" }
   ];
 
@@ -37,7 +36,7 @@ const Footer = () => {
                 </div>
               </div>
               <p className="text-muted-foreground max-w-md leading-relaxed mb-6">
-                Advancing distributed systems research through innovative algorithms, 
+                Advancing distributed systems research through innovative algorithms,
                 machine learning infrastructure, and blockchain technology.
               </p>
               <div className="flex space-x-3">
