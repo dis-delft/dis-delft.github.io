@@ -41,7 +41,7 @@ const People = () => {
       image: katsifodimosPhoto,
       research: ["Scalable Data Management", "Cloud Data Systems", "Database Transactions"],
       email: "a.katsifodimos@tudelft.nl",
-      profileUrl: "https://dis-delft.github.io/katsifodimos",
+      profileUrl: "https://asterios.katsifodimos.com/",
       linkedin: "https://www.linkedin.com/in/asteriosk/",
       github: "https://github.com/asteriosk",
       bio: "Assistant Professor and Group Head leading research in stream processing and big data systems."
@@ -53,7 +53,7 @@ const People = () => {
       research: ["Machine Learning", "Graph Neural Networks", "Hardware Acceleration"],
       email: "k.atasu@tudelft.nl",
       office: "1.E180",
-      profileUrl: "https://dis-delft.github.io/atasu",
+      profileUrl: "https://atasu-kubilay.github.io/",
       linkedin: "https://www.linkedin.com/in/kubilay-atasu-bb28a03",
       bio: "Associate Professor specializing in computer architecture and FPGA-based acceleration."
     },
@@ -64,7 +64,7 @@ const People = () => {
       research: ["Blockchain Technology", "Peer-to-Peer Systems", "Decentralized Systems"],
       email: "j.a.pouwelse@tudelft.nl",
       office: "340 East 1st Floor",
-      profileUrl: "https://dis-delft.github.io/pouwelse",
+      profileUrl: "https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/software-technology/data-intensive-systems/people/johan-pouwelse",
       bio: "Associate Professor leading research in blockchain and peer-to-peer systems."
     },
     {
@@ -74,7 +74,7 @@ const People = () => {
       research: ["Distributed Algorithms", "Fault Tolerance", "Byzantine Systems"],
       email: "j.decouchant@tudelft.nl",
       office: "1.E.280",
-      profileUrl: "https://dis-delft.github.io/decouchant",
+      profileUrl: "https://sites.google.com/view/jdecouchant/accueil",
       linkedin: "https://www.linkedin.com/in/jeremie-decouchant",
       github: "https://github.com/jdecouchant",
       bio: "Assistant Professor specializing in distributed algorithms and fault-tolerant systems."
@@ -86,7 +86,7 @@ const People = () => {
       research: ["Machine Learning Systems", "Cloud Computing", "Performance Modeling"],
       email: "lydia.chen@tudelft.nl",
       office: "1.E.080",
-      profileUrl: "https://dis-delft.github.io/ychen",
+      profileUrl: "https://lydiaychen.com/",
       linkedin: "https://www.linkedin.com/in/lydia-y-chen-65b7136/",
       bio: "Associate Professor focusing on machine learning systems and cloud performance."
     },
@@ -97,7 +97,7 @@ const People = () => {
       research: ["Distributed Systems", "Performance Analysis", "Grid Computing"],
       email: "d.h.j.epema@tudelft.nl",
       office: "060 East 1st floor",
-      profileUrl: "https://dis-delft.github.io/epema",
+      profileUrl: "https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/software-technology/data-intensive-systems/people/dick-epema",
       bio: "Emeritus Professor with extensive expertise in distributed systems and performance analysis."
     }
   ];
@@ -110,7 +110,7 @@ const People = () => {
       research: ["Distributed Systems", "Performance Analysis", "Cloud Computing"],
       email: "g.christodoulou@tudelft.nl",
       office: "1.E.240",
-      profileUrl: "https://dis-delft.github.io/christodoulou",
+      profileUrl: "https://giorgoschristodoulou.github.io/",
       linkedin: "https://www.linkedin.com/in/george-ch/",
       github: "https://github.com/GiorgosChristodoulou"
     },
