@@ -12,7 +12,7 @@ const Education = () => {
       instructors: ["Dr. A. Katsifodimos", "Dr. C. Lofi"],
       year: "3",
       period: "3",
-      url: "https://www.studiegids.tudelft.nl/a101_displayCourse.do?course_id=67566"
+      url: "https://www.studiegids.tudelft.nl/courses/study-guide/educations/14258"
     },
     {
       code: "CSE2430",
@@ -21,7 +21,7 @@ const Education = () => {
       instructors: ["Dr. J. Decouchant", "Dr. K. Atasu"],
       year: "3",
       period: "3",
-      url: "https://www.studiegids.tudelft.nl/a101_displayCourse.do?course_id=67578"
+      url: "https://www.studiegids.tudelft.nl/courses/study-guide/educations/14270"
     }
   ];
 
@@ -32,7 +32,7 @@ const Education = () => {
       credits: "5 ECTS",
       lecturers: ["Dr. J.A. Pouwelse", "Dr. J. Decouchant"],
       period: "4",
-      url: "https://www.studiegids.tudelft.nl/a101_displayCourse.do?course_id=67779"
+      url: "https://www.studiegids.tudelft.nl/courses/study-guide/educations/14764"
     },
     {
       code: "CS4525",
@@ -40,7 +40,7 @@ const Education = () => {
       credits: "5 ECTS",
       lecturers: ["Dr. A. Katsifodimos", "Dr. C. Lofi"],
       period: "2",
-      url: "https://www.studiegids.tudelft.nl/a101_displayCourse.do?course_id=70110"
+      url: "https://www.studiegids.tudelft.nl/courses/study-guide/educations/14750"
     },
     {
       code: "CS4545",
@@ -48,7 +48,7 @@ const Education = () => {
       credits: "5 ECTS",
       lecturers: ["Dr. J. Decouchant", "Dr. J.A. Pouwelse"],
       period: "2",
-      url: "https://www.studiegids.tudelft.nl/a101_displayCourse.do?course_id=70129"
+      url: "https://www.studiegids.tudelft.nl/courses/study-guide/educations/14765"
     },
     {
       code: "CS4550",
@@ -56,7 +56,7 @@ const Education = () => {
       credits: "5 ECTS",
       lecturers: ["Dr. A. Katsifodimos", "Dr. K. Atasu"],
       period: "3",
-      url: "https://www.studiegids.tudelft.nl/a101_displayCourse.do?course_id=70129"
+      url: "https://www.studiegids.tudelft.nl/courses/study-guide/educations/14766"
     },
     {
       code: "CS4725",
@@ -64,7 +64,7 @@ const Education = () => {
       credits: "5 ECTS",
       lecturers: ["Dr. K. Atasu", "Dr. Y. Chen"],
       period: "4",
-      url: "https://www.studiegids.tudelft.nl/a101_displayCourse.do?course_id=70151"
+      url: "https://www.studiegids.tudelft.nl/courses/study-guide/educations/14432"
     }
   ];
 
@@ -92,13 +92,13 @@ const Education = () => {
             Education
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We offer students education that prepares them for a leading role in science and engineering of 
-            data-intensive systems. This includes sharing our passion for topics from distributed & 
+            We offer students education that prepares them for a leading role in science and engineering of
+            data-intensive systems. This includes sharing our passion for topics from distributed &
             decentralised systems, Blockchain technology, federated learning, and scalable data management.
           </p>
           <p className="text-muted-foreground mt-4">
             TU Delft students can find all information on education in{" "}
-            <a 
+            <a
               href="https://brightspace.tudelft.nl/"
               target="_blank"
               rel="noopener noreferrer"
@@ -121,7 +121,7 @@ const Education = () => {
               <p className="text-muted-foreground">Foundational courses for undergraduate students</p>
             </div>
           </div>
-          
+
           <Card className="border-border/50 hover:shadow-elegant transition-all duration-300">
             <CardContent className="p-6">
               <div className="overflow-x-auto">
@@ -140,7 +140,7 @@ const Education = () => {
                     {bachelorCourses.map((course) => (
                       <tr key={course.code} className="border-b border-border/30">
                         <td className="p-3">
-                          <a 
+                          <a
                             href={course.url}
                             target="_blank"
                             rel="noopener noreferrer"
@@ -184,7 +184,7 @@ const Education = () => {
               <p className="text-muted-foreground">Advanced courses for graduate students</p>
             </div>
           </div>
-          
+
           <Card className="border-border/50 hover:shadow-elegant transition-all duration-300">
             <CardContent className="p-6">
               <div className="overflow-x-auto">
@@ -202,7 +202,7 @@ const Education = () => {
                     {masterCourses.map((course) => (
                       <tr key={course.code} className="border-b border-border/30">
                         <td className="p-3">
-                          <a 
+                          <a
                             href={course.url}
                             target="_blank"
                             rel="noopener noreferrer"
@@ -234,7 +234,7 @@ const Education = () => {
           </Card>
         </div>
 
-        {/* Blockchain Certificate */}
+        {/* Blockchain Certificate
         <div className="mb-16 animate-slide-up" style={{ animationDelay: '400ms' }}>
           <div className="flex items-center mb-8">
             <div className="w-12 h-12 bg-gradient-card border-2 border-primary rounded-xl flex items-center justify-center mr-4">
@@ -245,7 +245,7 @@ const Education = () => {
               <p className="text-muted-foreground">Master students can qualify for a Blockchain Engineering Certificate</p>
             </div>
           </div>
-          
+
           <Card className="border-border/50 hover:shadow-elegant transition-all duration-300 bg-gradient-card">
             <CardContent className="p-6">
               <p className="text-foreground/80 mb-6">
@@ -258,7 +258,7 @@ const Education = () => {
                       {index + 1}
                     </div>
                     <div className="flex-1">
-                      <a 
+                      <a
                         href={course.url}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -273,7 +273,7 @@ const Education = () => {
               </div>
             </CardContent>
           </Card>
-        </div>
+        </div> */}
 
         {/* Master Thesis */}
         <div className="mb-16 animate-slide-up" style={{ animationDelay: '600ms' }}>
@@ -284,7 +284,7 @@ const Education = () => {
                 <h3 className="text-2xl font-bold text-academic">Master Thesis</h3>
               </div>
               <p className="text-foreground/80 leading-relaxed">
-                Master students who like to do their graduation thesis in DIS are encouraged to select 
+                Master students who like to do their graduation thesis in DIS are encouraged to select
                 at least two of the DIS-offered lectures.
               </p>
             </CardContent>
@@ -294,8 +294,8 @@ const Education = () => {
         {/* Statistics */}
         <div className="grid md:grid-cols-3 gap-6 mb-12">
           {stats.map((stat, index) => (
-            <Card 
-              key={stat.label} 
+            <Card
+              key={stat.label}
               className="text-center group hover:shadow-elegant transition-all duration-300 animate-slide-up"
               style={{ animationDelay: `${800 + index * 100}ms` }}
             >
@@ -316,7 +316,7 @@ const Education = () => {
                 Join Our Educational Journey
               </h3>
               <p className="text-foreground/80 mb-6 leading-relaxed">
-                Interested in our courses or pursuing research in distributed systems? 
+                Interested in our courses or pursuing research in distributed systems?
                 Explore our educational offerings and research opportunities.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
