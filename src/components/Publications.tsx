@@ -1,25 +1,63 @@
-import { useEffect } from "react";
+
+import { useEffect, useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 
+
 const Publications = () => {
+  const [publicationsHtml, setPublicationsHtml] = useState<string>("");
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://filelist.tudelft.nl/Admin/pure-converter/js/iframeResizer.min.js";
-    script.async = true;
-    script.onload = () => {
-      // @ts-ignore
-      if (window.iFrameResize) {
-        // @ts-ignore
-        window.iFrameResize({}, "#pure-iframe");
+    const fetchPublications = async () => {
+      try {
+        const link = "https://purexml.ewi.tudelft.nl/direct/tu/group/bae30032-1ecb-46c4-8efb-ed9e7251d281/";
+        const page = window.location.search;
+
+        const response = await fetch(link + page);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status} `);
+        }
+
+        const text = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(text, "text/html");
+
+        // Create a temporary container to build the structure
+        const container = document.createElement("div");
+        const all_p = doc.getElementsByTagName("p");
+        const u_list = document.createElement("ul");
+        u_list.className = "publication-items space-y-4";
+
+        // Iterate over HTMLCollection
+        Array.from(all_p).forEach((p) => {
+          if (p.innerHTML) {
+            const d = document.createElement("li");
+            d.innerHTML = p.innerHTML;
+            d.className = "publication p-4 bg-card rounded-lg border border-border/50 shadow-sm";
+            u_list.appendChild(d);
+          }
+        });
+
+        container.appendChild(u_list);
+
+        const nav_items = doc.getElementsByClassName("pagination-block")[0];
+        if (nav_items) {
+          container.appendChild(nav_items.cloneNode(true));
+        }
+
+        setPublicationsHtml(container.innerHTML);
+      } catch (err) {
+        console.error("Failed to fetch publications:", err);
+        setError("Failed to load publications. Please try again later.");
+      } finally {
+        setLoading(false);
       }
     };
-    document.body.appendChild(script);
 
-    return () => {
-      document.body.removeChild(script);
-    };
+    fetchPublications();
   }, []);
 
   return (
@@ -36,42 +74,36 @@ const Publications = () => {
         </div>
 
         <div className="grid gap-8">
-          <iframe
-            id="pure-iframe"
-            src="https://purexml.ewi.tudelft.nl/direct/tu/group/bae30032-1ecb-46c4-8efb-ed9e7251d281"
-            scrolling="no"
-            aria-label="ad for publications Data Intensive Systems"
-            className="w-full border-none min-h-[800px]"
-          ></iframe>
-        </div>
+          {loading && (
+            <div className="text-center py-12">
+              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto"></div>
+              <p className="mt-4 text-muted-foreground">Loading publications...</p>
+            </div>
+          )}
 
-        {/* <div className="mt-16 text-center">
-          <Card className="glass-card max-w-2xl mx-auto">
-            <CardContent className="pt-8">
-              <h3 className="text-2xl font-bold mb-4 text-academic">
-                Explore More Research
-              </h3>
-              <p className="text-foreground/80 mb-6 leading-relaxed">
-                Looking for more publications or interested in collaboration?
-                Visit our research profiles and repositories.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                <Button className="bg-gradient-hero hover:shadow-glow transition-all duration-300">
-                  Google Scholar
-                  <ExternalLink className="ml-2 w-4 h-4" />
-                </Button>
-                <Button variant="outline" className="border-primary/20 hover:bg-primary/5">
-                  DBLP Profile
-                  <ExternalLink className="ml-2 w-4 h-4" />
-                </Button>
-                <Button variant="outline" className="border-primary/20 hover:bg-primary/5">
-                  ResearchGate
-                  <ExternalLink className="ml-2 w-4 h-4" />
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
-        </div> */}
+
+
+          {error && (
+            <div className="text-center py-12 text-destructive">
+              <p>{error}</p>
+              <Button
+                variant="outline"
+                className="mt-4"
+                onClick={() => window.location.reload()}
+              >
+                Retry
+              </Button>
+            </div>
+          )}
+
+          {!loading && !error && (
+            <div
+              id="publicationlist"
+              className="prose prose-invert max-w-none"
+              dangerouslySetInnerHTML={{ __html: publicationsHtml }}
+            />
+          )}
+        </div>
       </div>
     </section>
   );

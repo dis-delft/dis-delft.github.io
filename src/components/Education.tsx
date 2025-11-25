@@ -10,7 +10,7 @@ const Education = () => {
       name: "Information and Data Management",
       credits: "5 ECTS",
       instructors: ["Dr. A. Katsifodimos", "Dr. C. Lofi"],
-      year: "3",
+      year: "1",
       period: "3",
       url: "https://www.studiegids.tudelft.nl/courses/study-guide/educations/14258"
     },
