@@ -11,50 +11,55 @@ const Publications = () => {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    const fetchPublications = async () => {
-      try {
-        const link = "https://purexml.ewi.tudelft.nl/direct/tu/group/bae30032-1ecb-46c4-8efb-ed9e7251d281/";
-        const page = window.location.search;
+    const fetchPublications = () => {
+      const link = "https://purexml-open.ewi.tudelft.nl/direct/tu/group/bae30032-1ecb-46c4-8efb-ed9e7251d281";
+      const xhttp = new XMLHttpRequest();
+      const page = window.location.search;
 
-        const response = await fetch(link + page);
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status} `);
-        }
+      xhttp.onreadystatechange = function () {
+        if (this.readyState === 4) {
+          if (this.status === 200) {
+            try {
+              const parser = new DOMParser();
+              const doc = parser.parseFromString(this.responseText, "text/html");
+              const container = document.createElement("div");
+              const all_p = doc.getElementsByTagName("p");
+              const u_list = document.createElement("ul");
+              u_list.className = "space-y-1";
 
-        const text = await response.text();
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(text, "text/html");
+              // Iterate over HTMLCollection using the user's logic style but safe for TS
+              for (let i = 0; i < all_p.length; i++) {
+                if (all_p[i].innerHTML !== undefined) {
+                  const d = document.createElement("li");
+                  d.innerHTML = all_p[i].innerHTML;
+                  d.className = "p-2 bg-card text-card-foreground rounded-s border border-border/30 shadow-sm hover:shadow-md transition-all duration-200";
+                  u_list.appendChild(d);
+                }
+              }
 
-        // Create a temporary container to build the structure
-        const container = document.createElement("div");
-        const all_p = doc.getElementsByTagName("p");
-        const u_list = document.createElement("ul");
-        u_list.className = "publication-items space-y-4";
+              container.append(u_list);
+              const nav_items = doc.getElementsByClassName("pagination-block")[0];
+              if (nav_items !== undefined) {
+                container.append(doc.getElementsByClassName("pagination-block")[0]);
+              }
 
-        // Iterate over HTMLCollection
-        Array.from(all_p).forEach((p) => {
-          if (p.innerHTML) {
-            const d = document.createElement("li");
-            d.innerHTML = p.innerHTML;
-            d.className = "publication p-4 bg-card rounded-lg border border-border/50 shadow-sm";
-            u_list.appendChild(d);
+              setPublicationsHtml(container.innerHTML);
+              setLoading(false);
+            } catch (err) {
+              console.error("Error parsing publications:", err);
+              setError("Failed to parse publications.");
+              setLoading(false);
+            }
+          } else {
+            console.error("Failed to fetch publications, status:", this.status);
+            setError("Failed to load publications. Please try again later.");
+            setLoading(false);
           }
-        });
-
-        container.appendChild(u_list);
-
-        const nav_items = doc.getElementsByClassName("pagination-block")[0];
-        if (nav_items) {
-          container.appendChild(nav_items.cloneNode(true));
         }
+      };
 
-        setPublicationsHtml(container.innerHTML);
-      } catch (err) {
-        console.error("Failed to fetch publications:", err);
-        setError("Failed to load publications. Please try again later.");
-      } finally {
-        setLoading(false);
-      }
+      xhttp.open("GET", link + page, true);
+      xhttp.send();
     };
 
     fetchPublications();
@@ -99,7 +104,7 @@ const Publications = () => {
           {!loading && !error && (
             <div
               id="publicationlist"
-              className="prose prose-invert max-w-none"
+              className="prose prose-invert max-w-none [&_a]:text-primary [&_a]:underline [&_a]:decoration-primary/30 [&_a:hover]:decoration-primary [&_a]:transition-colors"
               dangerouslySetInnerHTML={{ __html: publicationsHtml }}
             />
           )}
