@@ -11,55 +11,44 @@ const Publications = () => {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    const fetchPublications = () => {
-      const link = "https://purexml-open.ewi.tudelft.nl/direct/tu/group/bae30032-1ecb-46c4-8efb-ed9e7251d281";
-      const xhttp = new XMLHttpRequest();
+    const fetchPublications = async () => {
+      const link = "https://purexml-open.ewi.tudelft.nl/direct/tu/group/bae30032-1ecb-46c4-8efb-ed9e7251d281/";
       const page = window.location.search;
 
-      xhttp.onreadystatechange = function () {
-        if (this.readyState === 4) {
-          if (this.status === 200) {
-            try {
-              const parser = new DOMParser();
-              const doc = parser.parseFromString(this.responseText, "text/html");
-              const container = document.createElement("div");
-              const all_p = doc.getElementsByTagName("p");
-              const u_list = document.createElement("ul");
-              u_list.className = "space-y-1";
+      try {
+        const response = await fetch(link + page);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const text = await response.text();
 
-              // Iterate over HTMLCollection using the user's logic style but safe for TS
-              for (let i = 0; i < all_p.length; i++) {
-                if (all_p[i].innerHTML !== undefined) {
-                  const d = document.createElement("li");
-                  d.innerHTML = all_p[i].innerHTML;
-                  d.className = "p-2 bg-card text-card-foreground rounded-s border border-border/30 shadow-sm hover:shadow-md transition-all duration-200";
-                  u_list.appendChild(d);
-                }
-              }
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(text, "text/html");
+        const container = document.createElement("div");
+        const all_p = doc.getElementsByTagName("p");
+        const u_list = document.createElement("ul");
+        u_list.className = "space-y-1";
 
-              container.append(u_list);
-              const nav_items = doc.getElementsByClassName("pagination-block")[0];
-              if (nav_items !== undefined) {
-                container.append(doc.getElementsByClassName("pagination-block")[0]);
-              }
-
-              setPublicationsHtml(container.innerHTML);
-              setLoading(false);
-            } catch (err) {
-              console.error("Error parsing publications:", err);
-              setError("Failed to parse publications.");
-              setLoading(false);
-            }
-          } else {
-            console.error("Failed to fetch publications, status:", this.status);
-            setError("Failed to load publications. Please try again later.");
-            setLoading(false);
+        for (let i = 0; i < all_p.length; i++) {
+          if (all_p[i].innerHTML !== undefined) {
+            const d = document.createElement("li");
+            d.innerHTML = all_p[i].innerHTML;
+            d.className = "p-2 bg-card text-card-foreground rounded-s border border-border/30 shadow-sm hover:shadow-md transition-all duration-200";
+            u_list.appendChild(d);
           }
         }
-      };
 
-      xhttp.open("GET", link + page, true);
-      xhttp.send();
+        container.append(u_list);
+        const nav_items = doc.getElementsByClassName("pagination-block")[0];
+        if (nav_items !== undefined) {
+          container.append(nav_items);
+        }
+
+        setPublicationsHtml(container.innerHTML);
+      } catch (err) {
+        console.error("Error fetching publications:", err);
+        setError("Failed to load publications. Please try again later.");
+      } finally {
+        setLoading(false);
+      }
     };
 
     fetchPublications();
