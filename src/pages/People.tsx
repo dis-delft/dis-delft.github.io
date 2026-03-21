@@ -52,7 +52,7 @@ const People = () => {
       image: atasuPhoto,
       research: ["Machine Learning", "Graph Neural Networks", "Hardware Acceleration"],
       email: "k.atasu@tudelft.nl",
-      office: "1.E180",
+      office: "1.E.180",
       profileUrl: "https://atasu-kubilay.github.io/",
       linkedin: "https://www.linkedin.com/in/kubilay-atasu-bb28a03",
       bio: "Associate Professor specializing in computer architecture and FPGA-based acceleration."
@@ -63,7 +63,7 @@ const People = () => {
       image: pouvelsePhoto,
       research: ["Blockchain Technology", "Peer-to-Peer Systems", "Decentralized Systems"],
       email: "j.a.pouwelse@tudelft.nl",
-      office: "340 East 1st Floor",
+      office: "1.E.340",
       profileUrl: "https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/software-technology/data-intensive-systems/people/johan-pouwelse",
       bio: "Associate Professor leading research in blockchain and peer-to-peer systems."
     },
@@ -96,7 +96,7 @@ const People = () => {
       image: epemaPhoto,
       research: ["Distributed Systems", "Performance Analysis", "Grid Computing"],
       email: "d.h.j.epema@tudelft.nl",
-      office: "060 East 1st floor",
+      office: "1.E.060",
       profileUrl: "https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/software-technology/data-intensive-systems/people/dick-epema",
       bio: "Emeritus Professor with extensive expertise in distributed systems and performance analysis."
     }
@@ -131,7 +131,7 @@ const People = () => {
       image: stokkinkPhoto,
       research: ["Blockchain", "Peer-to-Peer Networks", "Decentralized Systems"],
       email: "q.stokkink@tudelft.nl",
-      office: "420 East 1st floor",
+      office: "1.E.420",
       profileUrl: "https://dis-delft.github.io/stokkink",
       github: "https://github.com/qstokkink"
     },
@@ -165,7 +165,7 @@ const People = () => {
       image: chotkanPhoto,
       research: ["Blockchain Technology", "Decentralized Systems"],
       email: "r.chotkan@tudelft.nl",
-      office: "400 West 1st floor",
+      office: "1.W.400",
       profileUrl: "https://dis-delft.github.io/chotkan",
       linkedin: "https://www.linkedin.com/in/rowdy-chotkan/",
       github: "https://github.com/InvictusRMC"
@@ -185,9 +185,9 @@ const People = () => {
       name: "Marcel Gregoriadis",
       role: "PhD Candidate",
       image: gregoriadisPhoto,
-      research: ["Blockchain", "Distributed Ledger Technology"],
+      research: ["Decentralized Learning", "Information Retrieval"],
       email: "m.gregoriadis@tudelft.nl",
-      office: "420 East 1st floor",
+      office: "1.E.420",
       profileUrl: "https://dis-delft.github.io/gregoriadis",
       linkedin: "https://www.linkedin.com/in/marcel-gregoriadis",
       github: "https://github.com/mg98"
@@ -208,7 +208,7 @@ const People = () => {
       image: mrazPhoto,
       research: ["Distributed Computing", "Performance Analysis"],
       email: "o.mraz@tudelft.nl",
-      office: "240 East 1st floor",
+      office: "1.E.240",
       profileUrl: "https://dis-delft.github.io/mraz",
       linkedin: "https://www.linkedin.com/in/oto-mraz-643270192/",
       github: "https://github.com/omrazCZ"
@@ -219,7 +219,7 @@ const People = () => {
       image: nasrulinPhoto,
       research: ["Peer-to-Peer Systems", "Distributed Networks"],
       email: "b.nasrulin@tudelft.nl",
-      office: "400 East 1st floor",
+      office: "1.E.400",
       profileUrl: "https://dis-delft.github.io/nasrulin",
       github: "https://github.com/grimadas"
     },
