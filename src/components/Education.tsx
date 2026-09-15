@@ -12,7 +12,7 @@ const Education = () => {
       instructors: ["Dr. A. Katsifodimos", "Dr. C. Lofi"],
       year: "1",
       period: "3",
-      url: "https://www.studiegids.tudelft.nl/courses/study-guide/educations/14258"
+      url: "https://studiegids.tudelft.nl/courses/study-guide/educations/33516"
     },
     {
       code: "CSE2430",
@@ -21,7 +21,7 @@ const Education = () => {
       instructors: ["Dr. J. Decouchant", "Dr. K. Atasu"],
       year: "3",
       period: "3",
-      url: "https://www.studiegids.tudelft.nl/courses/study-guide/educations/14270"
+      url: "https://studiegids.tudelft.nl/courses/study-guide/educations/33528"
     }
   ];
 
@@ -32,7 +32,7 @@ const Education = () => {
       credits: "5 ECTS",
       lecturers: ["Dr. J.A. Pouwelse", "Dr. J. Decouchant"],
       period: "4",
-      url: "https://www.studiegids.tudelft.nl/courses/study-guide/educations/14764"
+      url: "https://studiegids.tudelft.nl/courses/study-guide/educations/34136"
     },
     {
       code: "CS4525",
@@ -40,7 +40,7 @@ const Education = () => {
       credits: "5 ECTS",
       lecturers: ["Dr. A. Katsifodimos", "Dr. C. Lofi"],
       period: "2",
-      url: "https://www.studiegids.tudelft.nl/courses/study-guide/educations/14750"
+      url: "https://studiegids.tudelft.nl/courses/study-guide/educations/34120"
     },
     {
       code: "CS4545",
@@ -48,7 +48,7 @@ const Education = () => {
       credits: "5 ECTS",
       lecturers: ["Dr. J. Decouchant", "Dr. J.A. Pouwelse"],
       period: "2",
-      url: "https://www.studiegids.tudelft.nl/courses/study-guide/educations/14765"
+      url: "https://studiegids.tudelft.nl/courses/study-guide/educations/34134"
     },
     {
       code: "CS4550",
@@ -56,7 +56,7 @@ const Education = () => {
       credits: "5 ECTS",
       lecturers: ["Dr. A. Katsifodimos", "Dr. K. Atasu"],
       period: "3",
-      url: "https://www.studiegids.tudelft.nl/courses/study-guide/educations/14766"
+      url: "https://studiegids.tudelft.nl/courses/study-guide/educations/34135"
     },
     {
       code: "CS4725",
@@ -64,14 +64,13 @@ const Education = () => {
       credits: "5 ECTS",
       lecturers: ["Dr. K. Atasu", "Dr. Y. Chen"],
       period: "4",
-      url: "https://www.studiegids.tudelft.nl/courses/study-guide/educations/14432"
+      url: "https://studiegids.tudelft.nl/courses/study-guide/educations/33702"
     }
   ];
 
   const blockchainCertificate = [
-    { code: "CS4520", name: "Security and Cryptography", url: "https://www.studiegids.tudelft.nl/a101_displayCourse.do?course_id=70109" },
-    { code: "CS4545", name: "Distributed Algorithms", url: "https://www.studiegids.tudelft.nl/a101_displayCourse.do?course_id=70129" },
-    { code: "CS4160", name: "Blockchain Engineering", url: "https://www.studiegids.tudelft.nl/a101_displayCourse.do?course_id=70129" }
+    { code: "CS4545", name: "Distributed Algorithms", url: "https://studiegids.tudelft.nl/courses/study-guide/educations/34134" },
+    { code: "CS4160", name: "Blockchain Engineering", url: "https://studiegids.tudelft.nl/courses/study-guide/educations/34136" }
   ];
 
   const stats = [
